@@ -847,11 +847,28 @@ ul.mobile-nav li.nav-item {
 /* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 
 @media only screen and (min-width: 970px) {
+	html {
+		background: lightgrey;
+	}
     body {
         width: 1024px;
-        background: #fff url(../cgimages/wet-background.gif) repeat-y fixed center;
+        /*background: #fff url(../cgimages/wet-background.gif) repeat-y fixed center;*/
+		background: #fff;
         overflow: visible;
+		height: auto;
     }
+	
+	body:before,
+	body:after {
+		content: "";
+		display: table;
+	} 
+	body:after {
+		clear: both;
+	}
+	group {
+		zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+	}
 	
 	body > a > img {
 		display: none;
