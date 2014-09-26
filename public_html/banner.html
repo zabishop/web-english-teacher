@@ -1,0 +1,14 @@
+<html><head></head>
+<body onLoad="setTimeout('refresh()',60000)">
+<script LANGUAGE="JavaScript"><!--
+function refresh() { window.location.href = self.location.href; }
+var now = new Date();var random = now.getSeconds()%parent.hrefItems;
+if (random == parent.lastrandom) { if (random == parent.hrefItems-1) random--; else random++; }
+parent.lastrandom = random;
+document.write('<A HREF="' + parent.myHref[random].dest + '" TARGET="_blank">');
+document.write('<center></center><IMG NAME="logo.jpg" WIDTH=450 HEIGHT=102 BORDER=0 ALT="' +
+    parent.myHref[random].text + '" SRC="' + parent.myHref[random].image + '"></center></center></A>');
+//--></script>
+<noscript><br><center><font face=Verdana size=2>The banner would have shown up in this Iframe.</font></noscript>
+</body>
+</html>

@@ -1,0 +1,437 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PlaceHolder\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-06-20 10:27:31+0000\n"
+"Last-Translator: Fabio Rubioglio\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: ../404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: ../404.php:20
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: ../archive.php:23
+#, php-format
+msgid "Category Archives: %s"
+msgstr ""
+
+#: ../archive.php:26
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: ../archive.php:33
+#, php-format
+msgid "Author Archives: %s"
+msgstr ""
+
+#: ../archive.php:41
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: ../archive.php:44
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: ../archive.php:47
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: ../archive.php:50
+#, php-format
+msgid "Archives: %s"
+msgstr ""
+
+#: ../comments.php:32
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../comments.php:39
+#: ../comments.php:59
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:40
+#: ../comments.php:60
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../comments.php:41
+#: ../comments.php:61
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../comments.php:71
+msgid "Comments are closed."
+msgstr ""
+
+#: ../content-page.php:17
+#: ../content-single.php:21
+#: ../content.php:47
+#: ../image.php:94
+msgid "Pages:"
+msgstr ""
+
+#: ../content-page.php:18
+#: ../content-single.php:60
+#: ../content.php:85
+#: ../image.php:35
+#: ../image.php:108
+msgid "Edit"
+msgstr ""
+
+#: ../content-single.php:28
+#: ../content-single.php:31
+#: ../content.php:56
+#: ../content.php:67
+msgid ", "
+msgstr ""
+
+#: ../content-single.php:36
+#, php-format
+msgid ""
+"This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" title=\"Permalink "
+"to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: ../content-single.php:38
+#, php-format
+msgid ""
+"Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark"
+"\">permalink</a>."
+msgstr ""
+
+#: ../content-single.php:44
+#, php-format
+msgid ""
+"This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" "
+"title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: ../content-single.php:46
+#, php-format
+msgid ""
+"This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title="
+"\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: ../content.php:17
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: ../content.php:29
+#: ../content.php:46
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../content.php:61
+#: ../content.php:73
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: ../content.php:81
+msgid "<span class=\"icon-font icon-comment-alt\"></span> Leave a comment"
+msgstr ""
+
+#: ../content.php:81
+msgid "<span class=\"icon-font icon-comment\"></span> 1 Comment"
+msgstr ""
+
+#: ../content.php:81
+msgid "<span class=\"icon-font icon-comments-alt\"></span> % Comments"
+msgstr ""
+
+#: ../footer.php:27
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: ../footer.php:30
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: ../functions.php:78
+msgid "Primary Menu"
+msgstr ""
+
+#: ../functions.php:79
+msgid "Secondary Menu"
+msgstr ""
+
+#: ../functions.php:105
+msgctxt "Source Sans Pro font: on or off"
+msgid "on"
+msgstr ""
+
+#: ../functions.php:111
+msgctxt "Oxygen font: on or off"
+msgid "on"
+msgstr ""
+
+#: ../functions.php:202
+msgid "Sidebar Primary"
+msgstr ""
+
+#: ../functions.php:210
+msgid "Footer"
+msgstr ""
+
+#: ../functions.php:245
+msgid "Primary Color "
+msgstr ""
+
+#: ../functions.php:350
+msgid "Read more"
+msgstr ""
+
+#: ../header.php:68
+msgid "Skip to content"
+msgstr ""
+
+#: ../image.php:24
+#, php-format
+msgid ""
+"Published <span class=\"entry-date\"><time class=\"entry-date\" datetime="
+"\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size "
+"image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" "
+"rel=\"gallery\">%8$s</a>"
+msgstr ""
+
+#: ../image.php:42
+msgid "&larr; Previous"
+msgstr ""
+
+#: ../image.php:43
+msgid "Next &rarr;"
+msgstr ""
+
+#: ../image.php:100
+#, php-format
+msgid ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a "
+"comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" "
+"title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr ""
+
+#: ../image.php:102
+#, php-format
+msgid ""
+"Comments are closed, but you can leave a trackback: <a class=\"trackback-link"
+"\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback"
+"\">Trackback URL</a>."
+msgstr ""
+
+#: ../image.php:104
+msgid ""
+"Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond"
+"\" title=\"Post a comment\">post a comment</a>."
+msgstr ""
+
+#: ../image.php:106
+msgid "Both comments and trackbacks are currently closed."
+msgstr ""
+
+#: ../inc/extras.php:75
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../inc/template-tags.php:39
+msgid "Post navigation"
+msgstr ""
+
+#: ../inc/template-tags.php:43
+msgctxt "Previous post link"
+msgid "&laquo;"
+msgstr ""
+
+#: ../inc/template-tags.php:44
+msgctxt "Next post link"
+msgid "&raquo;"
+msgstr ""
+
+#: ../inc/template-tags.php:49
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: ../inc/template-tags.php:53
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../inc/template-tags.php:78
+msgid "Pingback:"
+msgstr ""
+
+#: ../inc/template-tags.php:78
+#: ../inc/template-tags.php:101
+msgid "(Edit)"
+msgstr ""
+
+#: ../inc/template-tags.php:88
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: ../inc/template-tags.php:91
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../inc/template-tags.php:99
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../inc/template-tags.php:126
+#, php-format
+msgid ""
+"Posted on <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class="
+"\"entry-date\" datetime=\"%3$s\">%4$s</time></a><span class=\"byline\"> by "
+"<span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s"
+"\" rel=\"author\">%7$s</a></span></span>"
+msgstr ""
+
+#: ../inc/template-tags.php:132
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: ../inc/theme-options.php:17
+msgid "Theme Options"
+msgstr ""
+
+#: ../inc/theme-options.php:29
+msgid " Theme Options"
+msgstr ""
+
+#: ../inc/theme-options.php:30
+msgid ""
+"These options will let you setup the social icons at the top of the theme. "
+"You can enter the URLs of your profiles to have the icons show up."
+msgstr ""
+
+#: ../inc/theme-options.php:32
+msgid "Options saved"
+msgstr ""
+
+#: ../inc/theme-options.php:37
+msgid "Support thebox Theme"
+msgstr ""
+
+#: ../inc/theme-options.php:39
+msgid ""
+"If you enjoy my theme, please consider making a secure donation using the "
+"PayPal button. Anything is appreciated!"
+msgstr ""
+
+#: ../inc/theme-options.php:63
+msgid "Hide RSS Icon?"
+msgstr ""
+
+#: ../inc/theme-options.php:66
+msgid "Hide the RSS feed icon?"
+msgstr ""
+
+#: ../inc/theme-options.php:75
+msgid "Enter your Facebook URL"
+msgstr ""
+
+#: ../inc/theme-options.php:78
+msgid "Leave blank to hide Facebook Icon"
+msgstr ""
+
+#: ../inc/theme-options.php:87
+msgid "Enter your Twitter URL"
+msgstr ""
+
+#: ../inc/theme-options.php:90
+msgid "Leave blank to hide Twitter Icon"
+msgstr ""
+
+#: ../inc/theme-options.php:99
+msgid "Enter your Google + URL"
+msgstr ""
+
+#: ../inc/theme-options.php:102
+msgid "Leave blank to hide Google + Icon"
+msgstr ""
+
+#: ../inc/theme-options.php:111
+msgid "Enter your Instagram URL"
+msgstr ""
+
+#: ../inc/theme-options.php:114
+msgid "Leave blank to hide Instagram Icon"
+msgstr ""
+
+#: ../inc/theme-options.php:121
+msgid "Save Options"
+msgstr ""
+
+#: ../no-results.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: ../no-results.php:20
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../no-results.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../no-results.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../search.php:17
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../searchform.php:10
+msgid "Search"
+msgstr ""
+
+#: ../sidebar.php:18
+msgid "Archives"
+msgstr ""
+
+#: ../sidebar.php:25
+msgid "Meta"
+msgstr ""

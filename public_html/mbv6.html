@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>"The Minister's Black Veil" by Nathaniel Hawthorne (p. 6)</title>
+<style type="text/css">
+#hintbox{ /*CSS for pop up hint box */
+position:absolute;
+top: 0;
+background-color: #E6F0FA;
+width: 150px; /*Default width of hint.*/ 
+padding: 3px;
+border:1px solid navy;
+font:normal 11px Verdana;
+line-height:18px;
+z-index:100;
+border-right: 3px solid navy;
+border-bottom: 3px solid navy;
+visibility: hidden;
+}
+.hintanchor{ /*CSS for link that shows hint onmouseover*/
+
+color: navy;
+margin: 3px 3px;
+}
+.number {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 10px;
+	font-style: italic;
+	font-weight: normal;
+}
+</style>
+<script type="text/javascript">
+  
+var horizontal_offset="9px" //horizontal offset of hint box from anchor link
+/////No further editing needed
+var vertical_offset="0" //horizontal offset of hint box from anchor link. No need to change.
+var ie=document.all
+var ns6=document.getElementById&&!document.all
+function getposOffset(what, offsettype){
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+function clearbrowseredge(obj, whichedge){
+var edgeoffset=(whichedge=="rightedge")? parseInt(horizontal_offset)*-1 : parseInt(vertical_offset)*-1
+if (whichedge=="rightedge"){
+var windowedge=ie && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-30 : 
+
+window.pageXOffset+window.innerWidth-40
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetWidth+parseInt(horizontal_offset)
+}
+else{
+var windowedge=ie && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : 
+
+window.pageYOffset+window.innerHeight-18
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetHeight
+}
+return edgeoffset
+}
+function showhint(menucontents, obj, e, tipwidth){
+if ((ie||ns6) && document.getElementById("hintbox")){
+dropmenuobj=document.getElementById("hintbox")
+dropmenuobj.innerHTML=menucontents
+dropmenuobj.style.left=dropmenuobj.style.top=-500
+if (tipwidth!=""){
+dropmenuobj.widthobj=dropmenuobj.style
+dropmenuobj.widthobj.width=tipwidth
+}
+dropmenuobj.x=getposOffset(obj, "left")
+dropmenuobj.y=getposOffset(obj, "top")
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+obj.offsetWidth+"px"
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+"px"
+dropmenuobj.style.visibility="visible"
+obj.onmouseout=hidetip
+}
+}
+function hidetip(e){
+dropmenuobj.style.visibility="hidden"
+dropmenuobj.style.left="-500px"
+}
+function createhintbox(){
+var divblock=document.createElement("div")
+divblock.setAttribute("id", "hintbox")
+document.body.appendChild(divblock)
+}
+if (window.addEventListener)
+window.addEventListener("load", createhintbox, false)
+else if (window.attachEvent)
+window.attachEvent("onload", createhintbox)
+else if (document.getElementById)
+window.onload=createhintbox
+</script>
+</head>
+
+<body bgcolor="#F2E3BA">
+<table width="600" align="center" cellpadding="20" cellspacing="0">
+<tr>
+<td bgcolor="#FFFFFF">
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><em><strong>Note: You may need to allow scripts to run while you are on this page.</strong></em></font></p>
+
+<p align="center"><img src="graphics/veilslug.jpg" alt="The Minister's Black Veil" width="600" height="100" border="0"></p>
+<h5 align="right">page 6</h5>
+
+
+
+
+<p>For some time previous, his mind had been confused, wavering doubtfully between the past and the present, and hovering forward, as it were, at intervals, into the indistinctness of the world to come. There had been feverish turns, which tossed him from side to side, and wore away what little strength he had. But in his most convulsive struggles, and in the wildest vagaries of his intellect, when no other thought retained its sober influence, he still showed an <a href="#" class="hintanchor" onMouseover="showhint('awful solicitude = great care', this, event, '150px')">awful solicitude</a> lest the black veil should slip aside. Even if his bewildered soul could have forgotten, there was a faithful woman at his pillow, who, with <a href="#" class="hintanchor" onMouseover="showhint('&quot;averted eyes&quot; = Elizabeth would have covered his face up without looking at it if the veil had slipped.', this, event, '150px')">averted eyes</a>, would have covered that aged face, which she had last beheld in the comeliness of manhood. At length the death-stricken old man lay quietly in the <a href="#" class="hintanchor" onMouseover="showhint('torpor = dullness', this, event, '150px')">torpor</a> of mental and bodily exhaustion, with an <a href="#" class="hintanchor" onMouseover="showhint('&quot;imperceptible pulse&quot; = They can not feel his pulse.', this, event, '150px')">imperceptible pulse</a>, and breath that grew fainter and fainter, except when a long, deep, and irregular <a href="#" class="hintanchor" onMouseover="showhint('inspiration = breathing in', this, event, '150px')">inspiration</a> seemed to <a href="#" class="hintanchor" onMouseover="showhint('prelude = to come before', this, event, '150px')">prelude</a> the flight of his spirit.</p>
+
+<p>The minister of Westbury approached the bedside.</p>
+
+<p>&quot;Venerable Father Hooper,&quot; said he, &quot;the moment of your release is at hand. Are you ready for the lifting of the veil that shuts in time from eternity?&quot;</p>
+
+<p>Father Hooper at first replied merely by a feeble motion of his head; then, <a href="#" class="hintanchor" onMouseover="showhint('apprehensive = worried, concerned', this, event, '150px')">apprehensive</a>, perhaps, that his meaning might be doubtful, he <a href="#" class="hintanchor" onMouseover="showhint('exerted himself = made an effort', this, event, '150px')">exerted himself</a> to speak.</p>
+
+<p>&quot;Yea,&quot; said he, in faint accents, &quot;my soul hath a patient weariness until that veil be lifted.&quot;</p>
+
+</p>&quot;And is it fitting,&quot; resumed the Reverend Mr. Clark, &quot;that a man so given to prayer, of such a blameless example, holy in deed and thought, so far as mortal judgment may pronounce; is it fitting that a father in the church should leave a shadow on his memory, that may seem to blacken a life so pure? I pray you, my venerable brother, let not this thing be! Suffer us to be gladdened by your triumphant <a href="#" class="hintanchor" onMouseover="showhint('aspect = here, it means his face', this, event, '150px')">aspect</a> as you go to your reward. Before the veil of eternity be lifted, let me cast aside this black veil from your face!&quot;</p>
+
+<p>And thus speaking, the Reverend Mr. Clark bent forward to reveal the mystery of so many years. But, exerting a sudden energy, that made all the beholders stand <a href="#" class="hintanchor" onMouseover="showhint('aghast = frightened', this, event, '150px')">aghast</a>, Father Hooper snatched both his hands from beneath the bedclothes, and pressed them strongly on the black veil, <a href="#" class="hintanchor" onMouseover="showhint('resolute = determined', this, event, '150px')">resolute</a> to struggle, if the minister of Westbury would <a href="#" class="hintanchor" onMouseover="showhint('contend with = struggle with, fight with', this, event, '150px')">contend with</a> a dying man.</p>
+
+<p>&quot;Never!&quot; cried the veiled clergyman. &quot;On earth, never!&quot;</p>
+
+<p>&quot;Dark old man!&quot; exclaimed the affrighted minister, &quot;with what horrible crime upon your soul are you now passing to the judgment?&quot;</p>
+
+<p>Father Hooper's breath heaved; it rattled in his throat; but, with a mighty effort, grasping forward with his hands, he caught hold of life, and held it back till he should speak. He even raised himself in bed; and there he sat, shivering with the arms of death around him, while the black veil hung down, awful at that last moment, in the gathered terrors of a lifetime. And yet the faint, sad smile, so often there, now seemed to glimmer from its <a href="#" class="hintanchor" onMouseover="showhint('obscurity = difficulty in seeing something', this, event, '150px')">obscurity</a>, and linger on Father Hooper's lips.</p>
+
+<p>&quot;Why do you tremble at me alone?&quot; cried he, turning his veiled face round the circle of pale spectators. &quot;Tremble also at each other! Have men avoided me, and women shown no pity, and children screamed and fled, only for my black veil? What, but the mystery which it <a href="#" class="hintanchor" onMouseover="showhint('obscurely typifies = mysteriously represents', this, event, '150px')">obscurely typifies</a>, has made this piece of crape so awful? When the friend shows his inmost heart to his friend; the lover to his best beloved; when man does not vainly shrink from the eye of his Creator, loathsomely treasuring up the secret of his sin; then deem me a monster, for the symbol beneath which I have lived, and die! I look around me, and, lo! on every visage a Black Veil!&quot;</p>
+
+<p>While his auditors shrank from one another, in mutual affright, Father Hooper fell back upon his pillow, a veiled corpse, with a faint smile lingering on the lips. Still veiled, they laid him in his coffin, and a veiled corpse they bore him to the grave. The grass of many years has sprung up and withered on that grave, the burial stone is moss-grown, and good Mr. Hooper's face is dust; but awful is still the thought that it <a href="#" class="hintanchor" onMouseover="showhint('mouldered = decomposed, rotted', this, event, '150px')">mouldered</a> beneath the Black Veil!</p>
+
+
+<p align="right">&quot;The Minister's Black Veil&quot;&nbsp;<a href="mbv.html">1</a> 
+&nbsp;<a href="mbv2.html">2</a>
+&nbsp;<a href="mbv3.html">3</a>
+&nbsp;<a href="mbv4.html">4</a>
+&nbsp;<a href="mbv5.html">5</a>
+&nbsp;6
+&nbsp;<a href="mbv7.html">Discussion</a></p>
+
+</font>
+</td>
+</tr>
+</table>
+
+
+</body>
+</html>

@@ -1,0 +1,1064 @@
+@charset "utf-8";
+html {
+    height: 100%;
+}
+
+img { border: none;}
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding: 0;
+    text-align: left;
+    color: #000;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+	overflow: visible;
+}
+
+#vvohclightboxapi{
+	display: none;
+}
+
+.hidden-image {
+	position: absolute;
+	top: -1000px;
+	left: -10000px;
+}
+
+.webenglish #container {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+.webenglish #adheader {
+    display: none;
+}
+
+.webenglish #adheader a {
+    float: right;
+}
+
+.webenglish #adheader .headerenotes {
+    float: left;
+}
+
+.webenglish #adheader .headerenotes a img {
+    width: 98%;
+    margin: 1%;
+}
+
+.wetlogo {
+    display: block;
+    margin: 0 auto;
+}
+
+.webenglish #header {
+    position: relative;
+    background: white;
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.twitter-fb-link-wrapper {
+	width: 100%;
+	text-align:center;
+	margin-bottom: 1em;
+}
+
+.twitter-fb-link-wrapper p{
+	width: auto;
+	display: inline-block;
+	line-height: 32px;
+	margin: 0;
+	vertical-align:top;
+}
+
+div.headertwitter,
+div.headerfacebook {
+    display: inline-block;
+}
+
+.mobile-tablet-image {
+	display: inline-block;
+}
+.desktop-image {
+	display: none;
+}
+
+.st_email_large {
+	display: none;
+}
+
+select.mobile-selector {
+    display: block;
+    margin: 0 auto 1em auto;
+    width: 90%;
+    height: 2em;
+    font-size: 1.5em;
+	margin-bottom: .5em;
+}
+
+.webenglish #pagecontent {
+    width: 100%;
+    padding: 0;
+    display: block;
+}
+
+.webenglish #leftcontent {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.webenglish #leftcontenttop {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.webenglish #leftcontentbottom {
+    width: 100%;
+    padding: 0;
+    display: block;
+	     background: url(../cgimages/main-background.gif) repeat-x;
+}
+
+.webenglish #rightcontent {
+    float: right;
+    width: 100%;
+    height: auto;
+    background: url(../cgimages/sidebar2_green.gif) repeat-y #86b242;
+    padding: 0;
+    display: block;
+    margin: 0 auto 1em auto;
+}
+
+.webenglish #rightcontent a {
+    width: 100%;
+}
+
+.webenglish > #rightcontent > img {
+    height: auto;
+    width: 100%;
+}
+
+div.sidenewsletter {
+    height: 125px;
+    background: url(../cgimages/sidebar1_green.gif) repeat-x;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+div.sidenewslettertext {
+    width: 155px;
+    height: 105px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 13px;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1em;
+}
+
+div.sidenewsletter-in {
+    height: auto;
+    background: url(../cgimages/sidebar1_green.gif) repeat-x;
+    padding: 0;
+    display: block;
+}
+
+div.sidenewsletter-in img {
+    width: 100%;
+    height: 35px;
+}
+
+div.sidearticle {
+    display: none;
+}
+
+div.sidenav3, div.sidenav {
+    display: none;
+	height: 100%;
+}
+
+div.page404 {
+    background: url(../cgimages/main-background.gif) repeat-x;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 13px;
+    color: #000;
+}
+
+div.mainContent3, div.mainContent {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    min-height: 400px;
+
+}
+
+div.mainContentText {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 13px;
+    color: #000;
+}
+
+div.mainContentText a, div.mainContentText a:visited {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 13px;
+    color: #0f93ca;
+}
+
+div.mainContentText a:hover {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 13px;
+    color: #999;
+    text-decoration: underline;
+}
+
+div.rightbannerad {
+    width: 100%;
+    background: #999;
+    padding: 0;
+}
+
+div.rightbannerad a, div.rightbannerad a img {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+div.enotes {
+    width: 300px;
+    height: 131px;
+}
+
+div.enotes img {
+    width: 90%;
+    margin: 5%;
+}
+
+div.ETT {
+    /*margin: 10px;
+    width: 280px;
+    height: 242px;*/
+    width: 96%;
+    margin: 2%;
+}
+
+div.laborlaw {
+   /* margin: 10px;
+    width: 280px;
+    height: 131px;*/
+
+    width: 96%;
+    margin: 2%;
+}
+
+div.summer {
+   /* margin: 10px;
+    width: 280px;
+    height: 200px;*/
+
+    width: 96%;
+    margin: 2%;
+}
+
+div.siteteacher {
+    /*margin: 10px;
+    width: 280px;
+    height: 51px;*/
+
+    width: 96%;
+    margin: 2%;
+}
+
+
+ol.h-feed {
+    width: 100%;
+	min-width: 100%;
+}
+div.literacysite {
+    width: 100%;
+    text-align: center;
+    display: block;
+    width: 100%;
+    background: url(../cgimages/sidebar2_green.gif) repeat-y #86b242;
+}
+
+div.literacysite a {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#rightcontent div.literacysite > a > img {
+    width: 96%;
+    margin: 2%;
+}
+
+div.footer {
+    display: none;
+}
+
+div.mobile-footer hr {
+    margin-top: 1em;
+}
+
+div.mobile-footer {
+    width: 90%;
+    padding: 0;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 11px;
+    color: #999;
+    display: block;
+    margin: 0 auto;
+}
+
+div.footer a, div.footer a:visited, div.footer a:hover {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 11px;
+    color: #0f93ca;
+}
+
+h1, h3, h4 {
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+    color: #7ca53c;
+    font-weight: normal;
+    border-bottom: 1px solid;
+    line-height: 28px;
+}
+
+a {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 11px;
+    color: #0f93ca;
+    text-decoration: none;
+}
+
+a:link {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 11px;
+    color: #0f93ca;
+    text-decoration: none;
+}
+
+a:visited {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 11px;
+    color: #0f93ca;
+    text-decoration: none;
+}
+
+a:hover {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 11px;
+    color: #0f93ca;
+    text-decoration: underline;
+}
+
+td {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+th {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+h2, h4, h5, h6 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.style2 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    text-align: center;
+    color: #000000;
+}
+
+.style3 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: center;
+}
+
+.style4 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 16pt;
+}
+
+.style5 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    font-variant: normal;
+    text-transform: none;
+    color: #F7EDA6;
+    text-decoration: none;
+}
+
+.style6 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    text-align: right
+}
+
+td.level6 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    line-height: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+table {
+    width: 100%;
+}
+
+div.horizontal {
+    display: none;
+}
+
+ul.mobile-nav {
+    list-style: none;
+    text-align: center;
+    height: 32px;
+    margin: 0 0 1em 0;
+    padding: 0;
+    display: block;
+    background: url("../cgimages/mobile_nav_bg.jpg") repeat-x;
+}
+
+ul.mobile-nav li {
+    display: inline-block;
+    color: white;
+    margin: 5px 0;
+}
+
+ul.mobile-nav li > a {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+ul.mobile-nav li.nav-item {
+    color: white;
+}
+
+#cse {
+	/*margin-top: 1em;
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+	float: right;*/
+}
+
+.utility-belt {
+	width: 100%;
+	text-align: center;
+}
+
+/* Tablet Layout */
+@media only screen and (min-width: 481px) {
+
+    body {
+        width: 100%;
+    }
+	
+	#vvohclightboxapi{
+		display: inline;
+	}
+
+    .wetlogo {
+        display: inline-block;
+        margin: 0;
+		width: 30%;
+		
+    }
+
+    select.mobile-selector {
+        display: none;
+    }
+
+    .webenglish #adheader {
+        width: 100%;
+        height: 110px;
+        padding: 0;
+        background: #9bc14e url(../cgimages/adheader_green.gif) repeat-x;
+    }
+
+    ul.mobile-nav {
+        margin: 0;
+    }
+
+    ul.mobile-nav li {
+        margin: 5px 2%;
+    }
+
+    ul.mobile-nav li > a {
+        color: white;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    ul.mobile-nav li.nav-item {
+        color: white;
+    }
+
+
+    div.headerads {
+        display: inline-block;
+        padding: 5px;
+        height: 90px;
+    }
+
+    div.headerenotes {
+
+        display: none;
+    }
+	
+	.twitter-fb-link-wrapper {
+		width: 30%;
+		text-align:center;
+		margin-bottom: 1em;
+		display: inline-block;
+		margin-left: 1em;
+	}
+
+	.twitter-fb-link-wrapper p{
+		width: 100%;
+		display: block;
+	}
+
+
+    .webenglish #leftcontent {
+        float: left;
+        width: 70%;
+		
+    }
+
+    .webenglish #leftcontenttop {
+        width: 100%;
+        float: left;
+    }
+
+    .webenglish #leftcontentbottom {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .webenglish #rightcontent {
+        width: 30%;
+        height: auto;
+    }
+
+    .webenglish > #rightcontent > img{
+        width: 100%;
+        height: auto;
+    }
+
+    div.sidenewsletter {
+        float: left;
+        width: 100%;
+    }
+
+    div.sidenewsletter-in img {
+        height: auto;
+    }
+	
+	.st_email_large {
+		display: inline-block;
+	}
+
+    div.sidenewsletter-in {
+        width: 100%;
+        height: auto;
+    }
+
+    div.sidenewslettertext-in {
+        width: 704px;
+        height: 35px;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 13px;
+        color: #FFF;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    div.sidearticle {
+        float: left;
+        width: 75%;
+        height: 125px;
+        background: url(../cgimages/article-background2.jpg) no-repeat;
+        display: none;
+    }
+
+    div.sidearticletext {
+        width: 509px;
+        max-height: 100px;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 13px;
+        color: #000;
+    }
+
+    div.sidearticletext p {
+        width: 90%;
+        padding-top: 1.25em;
+        margin: 0 auto;
+    }
+
+    div.sidearticletext a, div.sidearticletext a:visited {
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 13px;
+        color: #FFF;
+    }
+
+    div.sidearticletext a:hover {
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 13px;
+        color: #EEE;
+    }
+
+    div.sidenav3, div.sidenav {
+        float: left;
+        width: 24%;
+        height: 840px;
+        padding: 0;
+        display: block;
+    }
+
+    div.sidenavtext {
+        width: 85%;
+		margin: 30px 7.55%;
+        padding: 0;
+    }
+
+    div.sidenavtext ul, div.sidenavtext li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 1em;
+        color: #0f93ca;
+        line-height: 1.5em;
+    }
+
+    div.sidenavtext ul li:first-of-type {
+		font-weight: bold;
+    }
+
+    div.sidenavtext a, div.sidenavtext a:visited {
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 11px;
+        color: #0f93ca;
+        text-decoration: none;
+    }
+
+    div.sidenavtext a:hover {
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 11px;
+        color: #999;
+        text-decoration: underline;
+    }
+
+    div.page404 {
+        background: url(../cgimages/main-background.gif) repeat-x;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 13px;
+        color: #000;
+    }
+
+    div.mainContent3, div.mainContent {
+        width: 76%;
+    }
+
+    div.mainContentText {
+        display: inline-block;
+        width: 90%;
+        padding: 1em 5%;
+    }
+
+    div.mainContentText textarea{
+        width: 100%;
+    }
+
+    div.rightbannerad {
+        width: 100%;
+    }
+
+    div.rightbannerad a, div.rightbannerad a img {
+        border: none;
+        width: 100%;
+    }
+
+    div.footer {
+        width: 100%;
+        padding: 0;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 11px;
+        color: #999;
+        display: block;
+    }
+
+    div.mobile-footer {
+        display: none;
+    }
+
+    .footer-links {
+        width: 100%;
+        text-align: center;
+    }
+
+    iframe {
+        display: block;
+        margin: 0 auto;
+    }
+
+    div.footer a, div.footer a:visited, div.footer a:hover {
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 11px;
+        color: #0f93ca;
+    }
+
+    div.nav-home {
+        width: 129px;
+        height: 33px;
+        display: inline-block;
+    }
+
+    div.nav-blog {
+        display: inline-block;
+        width: 183px;
+        height: 33px;
+    }
+
+    div.nav-sitemap {
+        display: inline-block;
+        width: 156px;
+        height: 33px;
+    }
+
+    div.nav-contact {
+        display: inline-block;
+        width: 141px;
+        height: 33px;
+    }
+
+    div.nav-home a {
+        display: block;
+        width: 129px;
+        height: 33px;
+        background-image: url(../cgimages/nav-home.gif);
+    }
+
+    div.nav-blog a {
+        display: block;
+        width: 183px;
+        height: 33px;
+        background-image: url('../cgimages/nav-blog.gif');
+    }
+
+    div.nav-sitemap a {
+        display: block;
+        width: 156px;
+        height: 33px;
+        background-image: url('../cgimages/nav-sitemap.gif');
+    }
+
+    div.nav-contact a {
+        display: block;
+        width: 141px;
+        height: 33px;
+        background-image: url('../cgimages/nav-contact.gif');
+    }
+
+    div.nav-home a:link,
+    div.nav-home a:visited,
+    div.nav-blog a:link,
+    div.nav-blog a:visited,
+    div.nav-sitemap a:link,
+    div.nav-sitemap a:visited,
+    div.nav-contact a:link,
+    div.nav-contact a:visited {
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        color: #5abb64;
+        text-align: center;
+        vertical-align: middle;
+        text-decoration: none;
+    }
+
+    div.nav-home a:hover,
+    div.nav-home a:active {
+        background-image: url('../cgimages/nav-home-on.gif');
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        color: #cccccc;
+    }
+
+    div.nav-blog a:hover,
+    div.nav-blog a:active {
+        background-image: url('../cgimages/nav-blog-on.gif');
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        color: #cccccc;
+    }
+
+    div.nav-sitemap a:hover,
+    div.rss a:active {
+        background-image: url('../cgimages/nav-sitemap-on.gif');
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        color: #cccccc;
+    }
+
+    div.nav-contact a:hover,
+    div.nav-contact a:active {
+        background-image: url('../cgimages/nav-contact-on.gif');
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        color: #cccccc;
+    }
+
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 970px) {
+    body {
+        width: 1024px;
+        background: #fff url(../cgimages/wet-background.gif) repeat-y fixed center;
+        overflow: visible;
+    }
+	
+	body > a > img {
+		display: none;
+		border: 3px red solid;
+	}
+
+    .webenglish #container {
+        width: 1024px;
+    }
+
+    .webenglish #adheader {
+
+		display: block;
+		        width: 100%;
+        height: 110px;
+        padding: 0;
+        background: #9bc14e url(../cgimages/adheader_green.gif) repeat-x;
+    }
+
+	.wetlogo{
+		width: auto;
+	}
+    div.headerads {
+        width: 728px;
+    }
+
+    div.headerenotes {
+        display: inline-block;
+        width: 281px;
+        height: 100px;
+    }
+
+    .webenglish #header {
+        width: 1024px;
+    }
+
+	.twitter-fb-link-wrapper {
+		display: inline-block;
+		vertical-align:top;
+		text-align:left;
+		width: auto;
+		margin-top: 1em;
+		margin-left: 3em;
+	}
+
+	.twitter-fb-link-wrapper p{
+		width: auto;
+		display: inline-block;
+	}
+	
+    div.headershare {
+        width: 175px;
+    }
+
+    .webenglish #pagecontent {
+        width: 1024px;
+    }
+
+    .webenglish #leftcontent {
+        width: 724px;
+    }
+
+    .webenglish #leftcontenttop {
+        width: 724px;
+    }
+
+    .webenglish #leftcontentbottom {
+        width: 724px;
+    }
+
+    .webenglish #rightcontent {
+        width: 300px;
+    }
+
+    div.sidenewsletter {
+        width: 175px;
+    }
+
+    div.sidenewslettertext {
+        width: 155px;
+    }
+
+    div.sidenewsletter-in {
+        width: 724px;
+    }
+
+    div.sidenewslettertext-in {
+        width: 704px;
+    }
+
+    div.sidearticle {
+        width: 549px;
+		display: block;
+    }
+
+    div.sidearticletext {
+        width: 509px;
+    }
+
+    div.sidenav {
+        width: 175px;
+    }
+
+    div.sidenav3 {
+        width: 175px;
+    }
+
+    div.sidenavtext {
+        width: 140px;
+    }
+
+    div.mainContent {
+        width: 549px;
+    }
+
+    div.mainContent3 {
+        width: 549px;
+    }
+
+    div.mainContentText {
+        width: 90%;
+    }
+
+    div.rightbannerad {
+        width: 300px;
+    }
+
+    div.enotes {
+        width: 280px;
+    }
+
+    div.ETT {
+        width: 280px;
+    }
+
+    div.laborlaw {
+        width: 280px;
+    }
+
+    div.summer {
+        width: 280px;
+    }
+
+    div.siteteacher {
+        width: 280px;
+    }
+
+    div.literacysite {
+       /* width: 280px;*/
+    }
+
+    div.footer {
+        width: 509px;
+
+    }
+
+    div.horizontal {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 609px;
+        height: 33px;
+    }
+
+    div.horizontal div {
+        float: left;
+    }
+
+    ul.mobile-nav {
+        display: none;
+    }
+
+    div.nav-home {
+        width: 129px;
+    }
+
+    div.nav-blog {
+        width: 183px;
+    }
+
+    div.nav-sitemap {
+        width: 156px;
+    }
+
+    div.nav-contact {
+        width: 141px;
+    }
+
+
+    div.nav-home a {
+        width: 129px;
+    }
+
+    div.nav-blog a {
+        width: 183px;
+    }
+
+    div.nav-sitemap a {
+        width: 156px;
+    }
+
+    div.nav-contact a {
+        width: 141px;
+    }
+
+}
+
+
+

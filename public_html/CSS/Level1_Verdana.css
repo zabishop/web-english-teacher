@@ -1,0 +1,150 @@
+@import url("a_tag_effects.css");
+
+
+a{
+	color: #333399;
+	text-decoration: none;
+}
+
+a:link{
+	color: #333399;
+	text-decoration: none;
+}
+
+a:visited{
+	color: #333399;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #333399;
+	text-decoration: underline;
+}
+
+
+
+body {
+	font-size:10pt;
+	font-family: Verdana, Geneva, Arial, helvetica, sans-serif;
+	background-color:#ffffcc
+}
+
+td {
+  font-size:10pt; font-family: Verdana, Geneva, Arial, helvetica, sans-serif; 
+}
+
+th {
+  font-size:10pt; font-family: Verdana, Geneva, Arial, helvetica, sans-serif; 
+}
+h2, h4, h5, h6 { font-family: "Trebuchet MS" Times, serif; text-align:center; }
+
+h3, h4 { font-family:Georgia, "Times New Roman", Times, serif; text-align:center;  }
+
+
+h1 {font-family: "Times", Times, serif; text-align:center; color:#0033CC; }
+
+.style2 {
+	font-family: Verdana, Geneva, Arial, helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align:center;
+	color: #000000;
+	}
+.style3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+		}
+.style4 {
+	line-height: 16pt;
+}
+.style5 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bolder;
+	font-variant: normal;
+	text-transform: none;
+	color: #FFFF00;
+	text-decoration: none;
+}
+
+.style6 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	text-align:right
+		}
+
+
+.level6 {
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #FFFFFF;
+		}
+
+
+/*********** #navBar styles ***********/
+	
+#navBar{
+	width: 125px;
+	margin: 0px;
+	padding: 0px;
+	background-color: #B9D4F2;
+	border-right: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+}
+
+#navBar ul a:link, #navBar ul a:visited {display: block;}
+#navBar ul {list-style: none; margin: 0; padding: 0;}
+
+/* hack to fix IE/Win's broken rendering of block-level anchors in lists */
+#navBar li {border-bottom: 1px solid #EEE;}
+
+/* fix for browsers that don't need the hack */
+html>body #navBar li {border-bottom: none;}
+	
+/*********** #sectionLinks styles ***********/
+
+#sectionLinks{
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	border-bottom: 1px solid #cccccc;
+	font-size: 90%;
+}
+
+#sectionLinks h3{
+	padding: 10px 0px 2px 10px;
+}
+
+#sectionLinks a {
+	display: block;
+	border-top: 1px solid #cccccc;
+	padding: 2px 0px 2px 10px;
+}
+
+#sectionLinks a:hover{
+	background-color: #ffffcc;
+}
+
+/*********** #siteInfo styles ***********/
+ 
+#siteInfo{
+	clear: both;
+	border: 1px solid #cccccc;
+	font-size: 75%;
+	color: #333333;
+	padding: 10px 10px 10px 10px;
+}
+
+#siteInfo2{
+	clear: both;
+	border: 1px solid #cccccc;
+	font-size: 60%;
+	color: #333333;
+	padding: 5px 5px 5px 5px;
+}

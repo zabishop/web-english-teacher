@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>"The Minister's Black Veil" by Nathaniel Hawthorne (p. 4)</title>
+<style type="text/css">
+#hintbox{ /*CSS for pop up hint box */
+position:absolute;
+top: 0;
+background-color: #E6F0FA;
+width: 150px; /*Default width of hint.*/ 
+padding: 3px;
+border:1px solid navy;
+font:normal 11px Verdana;
+line-height:18px;
+z-index:100;
+border-right: 3px solid navy;
+border-bottom: 3px solid navy;
+visibility: hidden;
+}
+.hintanchor{ /*CSS for link that shows hint onmouseover*/
+
+color: navy;
+margin: 3px 3px;
+}
+.number {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 10px;
+	font-style: italic;
+	font-weight: normal;
+}
+</style>
+<script type="text/javascript">
+  
+var horizontal_offset="9px" //horizontal offset of hint box from anchor link
+/////No further editing needed
+var vertical_offset="0" //horizontal offset of hint box from anchor link. No need to change.
+var ie=document.all
+var ns6=document.getElementById&&!document.all
+function getposOffset(what, offsettype){
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+function clearbrowseredge(obj, whichedge){
+var edgeoffset=(whichedge=="rightedge")? parseInt(horizontal_offset)*-1 : parseInt(vertical_offset)*-1
+if (whichedge=="rightedge"){
+var windowedge=ie && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-30 : 
+
+window.pageXOffset+window.innerWidth-40
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetWidth+parseInt(horizontal_offset)
+}
+else{
+var windowedge=ie && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : 
+
+window.pageYOffset+window.innerHeight-18
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetHeight
+}
+return edgeoffset
+}
+function showhint(menucontents, obj, e, tipwidth){
+if ((ie||ns6) && document.getElementById("hintbox")){
+dropmenuobj=document.getElementById("hintbox")
+dropmenuobj.innerHTML=menucontents
+dropmenuobj.style.left=dropmenuobj.style.top=-500
+if (tipwidth!=""){
+dropmenuobj.widthobj=dropmenuobj.style
+dropmenuobj.widthobj.width=tipwidth
+}
+dropmenuobj.x=getposOffset(obj, "left")
+dropmenuobj.y=getposOffset(obj, "top")
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+obj.offsetWidth+"px"
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+"px"
+dropmenuobj.style.visibility="visible"
+obj.onmouseout=hidetip
+}
+}
+function hidetip(e){
+dropmenuobj.style.visibility="hidden"
+dropmenuobj.style.left="-500px"
+}
+function createhintbox(){
+var divblock=document.createElement("div")
+divblock.setAttribute("id", "hintbox")
+document.body.appendChild(divblock)
+}
+if (window.addEventListener)
+window.addEventListener("load", createhintbox, false)
+else if (window.attachEvent)
+window.attachEvent("onload", createhintbox)
+else if (document.getElementById)
+window.onload=createhintbox
+</script>
+</head>
+
+<body bgcolor="#F2E3BA">
+<table width="600" align="center" cellpadding="20" cellspacing="0">
+<tr>
+<td bgcolor="#FFFFFF">
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><em><strong>Note: You may need to allow scripts to run while you are on this page.</strong></em></font></p>
+
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+<p align="center"><img src="graphics/veilslug.jpg" alt="The Minister's Black Veil" width="600" height="100" border="0"></p>
+<h5 align="right">page 4</h5>
+
+
+<p>But there was one person in the village <a href="#" class="hintanchor" onMouseover="showhint('unappalled = not frightened', this, event, '150px')">unappalled</a> by the awe with which the black veil had impressed all beside herself. When the deputies returned without an explanation, or even venturing to demand one, she, with the calm energy of her character, determined to chase away the strange cloud that appeared to be settling round Mr. Hooper, every moment more darkly than before. As his <a href="#" class="hintanchor" onMouseover="showhint('plighted = promised<br>Pastor Hooper and Elizabeth were engaged.', this, event, '150px')">plighted</a> wife, it should be her privilege to know what the black veil concealed. At the minister's first visit, therefore, she entered upon the subject with a direct simplicity, which made the task easier both for him and her. After he had seated himself, she fixed her eyes <a href="#" class="hintanchor" onMouseover="showhint('steadfastly = steadily', this, event, '150px')">steadfastly</a> upon the veil, but could discern nothing of the dreadful gloom that had so overawed the multitude: it was but a double fold of crape, hanging down from his forehead to his mouth, and slightly stirring with his breath.</p>
+
+<p>&quot;No,&quot; said she aloud, and smiling, &quot;there is nothing terrible in this piece of crape, except that it hides a face which I am always glad to look upon. Come, good sir, let the sun shine from behind the cloud. First lay aside your black veil: then tell me why you put it on.&quot;</p>
+
+<p>Mr. Hooper's smile glimmered faintly.</p>
+
+<p>&quot;There is an hour to come,&quot; said he, &quot;when all of us shall cast aside our veils. Take it not <a href="#" class="hintanchor" onMouseover="showhint('&quot;Take it not amiss&quot; = Do not think anything is wrong', this, event, '150px')">amiss</a>, beloved friend, if I wear this piece of crape till then.&quot;</p>
+
+<p>&quot;Your words are a mystery, too,&quot; returned the young lady. &quot;Take away the veil from them, at least.&quot;</p>
+
+<p>&quot;Elizabeth, I will,&quot; said he, &quot;so far as my vow may <a href="#" class="hintanchor" onMouseover="showhint('&quot;Suffer&quot; here means &quot;allow&quot; or &quot;permit.&quot;', this, event, '150px')">suffer</a> me. Know, then, this veil is a type and a symbol, and I am bound to wear it ever, both in light and darkness, in solitude and before the gaze of <a href="#" class="hintanchor" onMouseover="showhint('multitudes = lots of people', this, event, '150px')">multitudes</a>, and as with strangers, so with my familiar friends. No mortal eye will see it withdrawn. This dismal shade must separate me from the world: even you, Elizabeth, can never come behind it!&quot;</p>
+
+<p>&quot;What grievous <a href="#" class="hintanchor" onMouseover="showhint('Grievous affliction = terrible problem', this, event, '150px')">affliction</a> hath befallen you,&quot; she earnestly inquired, &quot;that you should thus darken your eyes forever?&quot;</p>
+
+<p>&quot;If it be a sign of mourning,&quot; replied Mr. Hooper, &quot;I, perhaps, like most other mortals, have sorrows dark enough to be typified by a black veil.&quot;</p>
+
+<p>&quot;But what if the world will not believe that it is the type of an innocent sorrow?&quot; urged Elizabeth. &quot;Beloved and respected as you are, there may be whispers that you hide your face under the consciousness of secret sin. For the sake of your holy office, do away this scandal!&quot;</p>
+
+<p>The color rose into her cheeks as she <a href="#" class="hintanchor" onMouseover="showhint('intimated = hinted at', this, event, '150px')">intimated</a> the nature of the rumors that were already abroad in the village. But Mr. Hooper's mildness did not <a href="#" class="hintanchor" onMouseover="showhint('&quot;did not forsake him&quot; = did not leave him', this, event, '150px')">forsake</a> him. He even smiled again--that same sad smile, which always appeared like a faint glimmering of light, proceeding from the <a href="#" class="hintanchor" onMouseover="showhint('obscurity = difficulty in seeing', this, event, '150px')">obscurity</a> beneath the veil.</p>
+
+<p>&quot;If I hide my face for sorrow, there is cause enough,&quot; he merely replied; &quot;and if I cover it for secret sin, what mortal might not do the same?&quot;</p>
+
+<p>And with this gentle, but unconquerable <a href="#" class="hintanchor" onMouseover="showhint('obstinacy = stubbornness', this, event, '150px')">obstinacy</a> did he resist all her <a href="#" class="hintanchor" onMouseover="showhint('entreaties = requests', this, event, '150px')">entreaties</a>. At length Elizabeth sat silent. For a few moments she appeared lost in thought, considering, probably, what new methods might be tried to withdraw her lover from so dark a fantasy, which, if it had no other meaning, was perhaps a symptom of mental disease. Though of a firmer character than his own, the tears rolled down her cheeks. But, in an instant, as it were, a new feeling took the place of sorrow: her eyes were fixed <a href="#" class="hintanchor" onMouseover="showhint('insensibly = without really paying attention', this, event, '150px')">insensibly</a> on the black veil, when, like a sudden twilight in the air, its terrors fell around her. She arose, and stood trembling before him.</p>
+
+<p>&quot;And do you feel it then, at last?&quot; said he mournfully.</p>
+
+<p>She made no reply, but covered her eyes with her hand, and turned to leave the room. He rushed forward and caught her arm.</p>
+
+<p>&quot;Have patience with me, Elizabeth!&quot; cried he, passionately. &quot;Do not desert me, though this veil must be between us here on earth. Be mine, and hereafter there shall be no veil over my face, no darkness between our souls! It is but a mortal veil--it is not for eternity! O! you know not how lonely I am, and how frightened, to be alone behind my black veil. Do not leave me in this miserable obscurity forever!&quot;</p>
+
+<p>&quot;Lift the veil but once, and look me in the face,&quot; said she.</p>
+
+<p>&quot;Never! It cannot be!&quot; replied Mr. Hooper.</p>
+
+<p>&quot;Then farewell!&quot; said Elizabeth.</p>
+
+<p>She withdrew her arm from his grasp, and slowly departed, pausing at the door, to give one long shuddering gaze, that seemed almost to <a href="#" class="hintanchor" onMouseover="showhint('penetrate = break through', this, event, '150px')">penetrate</a> the mystery of the black veil. But, even amid his grief, Mr. Hooper smiled to think that only a material emblem had separated him from happiness, though the horrors, which it shadowed forth, must be drawn darkly between the fondest of lovers.</p>
+
+<p>&nbsp;</p>
+
+<p align="right">&quot;The Minister's Black Veil&quot; conintued  <a href="mbv.html">1</a> 
+&nbsp;<a href="mbv2.html">2</a>
+&nbsp;<a href="mbv3.html">3</a>
+&nbsp;4
+&nbsp;<a href="mbv5.html">5</a>
+&nbsp;<a href="mbv6.html">6</a>
+&nbsp;<a href="mbv7.html">Discussion</a></p>
+
+</font>
+</td>
+</tr>
+</table>
+
+
+</body>
+</html>

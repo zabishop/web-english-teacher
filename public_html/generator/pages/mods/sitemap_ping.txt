@@ -1,0 +1,6 @@
+http://www.google.com/webmasters/tools/ping?sitemap=
+http://search.yahooapis.com/SiteExplorerService/V1/ping?sitemap=
+http://submissions.ask.com/ping?sitemap=
+http://api.moreover.com/ping?u=
+http://webmaster.live.com/ping.aspx?siteMap=
+http://www.bing.com/webmaster/ping.aspx?siteMap=

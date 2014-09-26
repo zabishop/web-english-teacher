@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>"The Minister's Black Veil" by Nathaniel Hawthorne (p. 3)</title>
+<style type="text/css">
+#hintbox{ /*CSS for pop up hint box */
+position:absolute;
+top: 0;
+background-color: #E6F0FA;
+width: 150px; /*Default width of hint.*/ 
+padding: 3px;
+border:1px solid navy;
+font:normal 11px Verdana;
+line-height:18px;
+z-index:100;
+border-right: 3px solid navy;
+border-bottom: 3px solid navy;
+visibility: hidden;
+}
+.hintanchor{ /*CSS for link that shows hint onmouseover*/
+
+color: navy;
+margin: 3px 3px;
+}
+.number {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 10px;
+	font-style: italic;
+	font-weight: normal;
+}
+</style>
+<script type="text/javascript">
+  
+var horizontal_offset="9px" //horizontal offset of hint box from anchor link
+/////No further editing needed
+var vertical_offset="0" //horizontal offset of hint box from anchor link. No need to change.
+var ie=document.all
+var ns6=document.getElementById&&!document.all
+function getposOffset(what, offsettype){
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+function clearbrowseredge(obj, whichedge){
+var edgeoffset=(whichedge=="rightedge")? parseInt(horizontal_offset)*-1 : parseInt(vertical_offset)*-1
+if (whichedge=="rightedge"){
+var windowedge=ie && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-30 : 
+
+window.pageXOffset+window.innerWidth-40
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetWidth+parseInt(horizontal_offset)
+}
+else{
+var windowedge=ie && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : 
+
+window.pageYOffset+window.innerHeight-18
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetHeight
+}
+return edgeoffset
+}
+function showhint(menucontents, obj, e, tipwidth){
+if ((ie||ns6) && document.getElementById("hintbox")){
+dropmenuobj=document.getElementById("hintbox")
+dropmenuobj.innerHTML=menucontents
+dropmenuobj.style.left=dropmenuobj.style.top=-500
+if (tipwidth!=""){
+dropmenuobj.widthobj=dropmenuobj.style
+dropmenuobj.widthobj.width=tipwidth
+}
+dropmenuobj.x=getposOffset(obj, "left")
+dropmenuobj.y=getposOffset(obj, "top")
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+obj.offsetWidth+"px"
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+"px"
+dropmenuobj.style.visibility="visible"
+obj.onmouseout=hidetip
+}
+}
+function hidetip(e){
+dropmenuobj.style.visibility="hidden"
+dropmenuobj.style.left="-500px"
+}
+function createhintbox(){
+var divblock=document.createElement("div")
+divblock.setAttribute("id", "hintbox")
+document.body.appendChild(divblock)
+}
+if (window.addEventListener)
+window.addEventListener("load", createhintbox, false)
+else if (window.attachEvent)
+window.attachEvent("onload", createhintbox)
+else if (document.getElementById)
+window.onload=createhintbox
+</script>
+</head>
+
+<body bgcolor="#F2E3BA">
+<table width="600" align="center" cellpadding="20" cellspacing="0">
+<tr>
+<td bgcolor="#FFFFFF">
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><em><strong>Note: You may need to allow scripts to run while you are on this page.</strong></em></font></p>
+
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+<p align="center"><img src="graphics/veilslug.jpg" alt="The Minister's Black Veil" width="600" height="100" border="0"></p>
+<h5 align="right">page 3</h5>
+
+
+<p>The afternoon service was attended with similar circumstances. At its conclusion, the bell tolled for the funeral of a young lady. The relatives and friends were assembled in the house, and the more distant acquaintances stood about the door, speaking of the good qualities of the deceased, when their talk was interrupted by the appearance of Mr. Hooper, still covered with his black veil. It was now an appropriate emblem. The clergyman stepped into the room where the corpse was laid, and bent over the coffin, to take a last farewell of his deceased parishioner. As he stooped, the veil hung straight down from his forehead, so that, if her eyelids had not been closed forever, the dead maiden might have seen his face. Could Mr. Hooper be fearful of her glance, that he so hastily caught back the black veil? A person who watched the interview between the dead and living, <a href="#" class="hintanchor" onMouseover="showhint('scrupled not to affirm = was willing to say that', this, event, '150px')">scrupled not</a> to affirm, that, at the instant when the clergyman's features were disclosed, the corpse had slightly shuddered, rustling the shroud and muslin cap, though the countenance retained the composure of death. A superstitious old woman was the only witness of this <a href="#" class="hintanchor" onMouseover="showhint('prodigy = unusual event<br> If there was only one witness, can we trust that it happened?', this, event, '150px')">prodigy</a>. From the coffin Mr. Hooper passed into the chamber of the mourners, and <a href="#" class="hintanchor" onMouseover="showhint('thence = from there', this, event, '150px')">thence</a> to the head of the staircase, to make the funeral prayer. It was a tender and heart-dissolving prayer, full of sorrow, yet so <a href="#" class="hintanchor" onMouseover="showhint('imbued = filled with', this, event, '150px')">imbued</a> with celestial hopes, that the music of a heavenly harp, swept by the fingers of the dead, seemed faintly to be heard among the saddest accents of the minister. The people trembled, though they but darkly understood him when he prayed that they, and himself, and all of mortal race, might be ready, as he trusted this young maiden had been, for the dreadful hour that should snatch the veil from their faces. The bearers went heavily forth, and the mourners followed, saddening all the street, with the dead before them, and Mr. Hooper in his black veil behind.</p>
+
+<p>&quot;Why do you look back?&quot; said one in the procession to his partner.</p>
+
+<p>&quot;I had a <a href="#" class="hintanchor" onMouseover="showhint('I had a fancy = I imagined', this, event, '150px')">fancy</a>,&quot; replied she, &quot;that the minister and the maiden's spirit were walking hand in hand.&quot;</p>
+
+<p>&quot;And so had I, at the same moment,&quot; said the other.</p>
+
+<p>That night, the handsomest couple in Milford village were to be joined in <a href="#" class="hintanchor" onMouseover="showhint('wedlock = marriage', this, event, '150px')">wedlock</a>. Though reckoned a melancholy man, Mr. Hooper had a <a href="#" class="hintanchor" onMouseover="showhint('placide = peaceful', this, event, '150px')">placid</a> cheerfulness for such occasions, which often excited a sympathetic smile where livelier merriment would have been thrown away. There was no quality of his disposition which made him more beloved than this. The company at the wedding awaited his arrival with impatience, trusting that the strange awe, which had gathered over him throughout the day, would now be <a href="#" class="hintanchor" onMouseover="showhint('dispelled = dissolved', this, event, '150px')">dispelled</a>. But such was not the result. When Mr. Hooper came, the first thing that their eyes rested on was the same horrible black veil, which had added deeper gloom to the funeral, and could <a href="#" class="hintanchor" onMouseover="showhint('portend = foreshadow', this, event, '150px')">portend</a> nothing but evil to the wedding. Such was its immediate effect on the guests that a cloud seemed to have rolled duskily from beneath the black crape, and dimmed the light of the candles. The bridal pair stood up before the minister. But the bride's cold fingers quivered in the <a href="#" class="hintanchor" onMouseover="showhint('tremulous = trembling', this, event, '150px')">tremulous</a> hand of the bridegroom, and her deathlike paleness caused a whisper that the maiden who had been buried a few hours before was come from her grave to be married. If ever another wedding were so dismal, it was that famous one where they tolled the wedding knell. After performing the ceremony, Mr. Hooper raised a glass of wine to his lips, wishing happiness to the new-married couple in a strain of mild pleasantry that ought to have brightened the features of the guests, like a cheerful gleam from the hearth. At that instant, catching a glimpse of his figure in the looking-glass, the black veil involved his own spirit in the horror with which it overwhelmed all others. His frame shuddered, his lips grew white, he spilt the untasted wine upon the carpet, and rushed forth into the darkness. For the Earth, too, had on her Black Veil.</p>
+
+<p>The next day, the whole village of Milford talked of little else than Parson Hooper's black veil. That, and the mystery <a href="#" class="hintanchor" onMouseover="showhint('concealed = hidden', this, event, '150px')">concealed</a> behind it, supplied a topic for discussion between acquaintances meeting in the street, and good women gossiping at their open windows. It was the first item of news that the tavern-keeper told to his guests. The children babbled of it on their way to school. One imitative little imp covered his face with an old black handkerchief, thereby so affrighting his playmates that the panic seized himself</a>, and he well-nigh lost his wits by his own <a href="#" class="hintanchor" onMouseover="showhint('He scared his playmates so much that he actually scared himself, too.', this, event, '150px')">waggery</a>.</p>
+
+<p>It was remarkable that of all the busybodies and <a href="#" class="hintanchor" onMouseover="showhint('impertinent - disrespectful', this, event, '150px')">impertinent</a> people in the parish, not one <a href="#" class="hintanchor" onMouseover="showhint('ventured = tried', this, event, '150px')">ventured</a> to put the plain question to Mr. Hooper, <a href="#" class="hintanchor" onMouseover="showhint('wherefore = why', this, event, '150px')">wherefore</a> he did this thing. <a href="#" class="hintanchor" onMouseover="showhint('hitherto = before now', this, event, '150px')">Hitherto</a>, whenever there appeared the slightest call for such interference, he had never lacked advisers, nor shown himself <a href="#" class="hintanchor" onMouseover="showhint('adverse = unwilling', this, event, '150px')">adverse</a> to be guided by their judgment. If he <a href="#" class="hintanchor" onMouseover="showhint('erred = made a mistake', this, event, '150px')">erred</a> at all, it was by so painful a degree of self-distrust, that even the mildest <a href="#" class="hintanchor" onMouseover="showhint('censure = scolding', this, event, '150px')">censure</a> would lead him to consider an indifferent action as a <a href="#" class="hintanchor" onMouseover="showhint('He would think something minor was a serious mistake.', this, event, '150px')">crime</a>. Yet, though so well acquainted with this <a href="#" class="hintanchor" onMouseover="showhint('amiable weakness = kindly fault', this, event, '150px')">amiable weakness</a>, no individual among his parishioners chose to make the black veil a subject of friendly <a href="#" class="hintanchor" onMouseover="showhint('remonstrance = protest, objection', this, event, '150px')">remonstrance</a>. There was a feeling of dread, neither plainly confessed nor carefully concealed, which caused each to shift the responsibility upon another, till at length it was found expedient to send a <a href="#" class="hintanchor" onMouseover="showhint('&quot;it was found expedient to send a deputation of the church&quot; = people decided to send some elders from church to talk to him', this, event, '150px')">deputation</a> of the church, in order to deal with Mr. Hooper about the mystery, before it should grow into a scandal. Never did an embassy so ill discharge its <a href="#" class="hintanchor" onMouseover="showhint('Never did a group do its job so badly.', this, event, '150px')">duties</a>. The minister received them with friendly courtesy, but became silent, after they were seated, leaving to his visitors the whole burden of introducing their important business. The topic, it might be supposed, was obvious enough. There was the black veil swathed round Mr. Hooper's forehead, and concealing every feature above his placid mouth, on which, at times, they could <a href="#" class="hintanchor" onMouseover="showhint('perceive = see, sense', this, event, '150px')">perceive</a> the glimmering of a melancholy smile. But that piece of crape, to their imagination, seemed to hang down before his heart, the symbol of a fearful secret between him and them. Were the veil but cast aside, they might speak freely of it, but not till then. Thus they sat a considerable time, speechless, confused, and shrinking uneasily from Mr. Hooper's eye, which they felt to be fixed upon them with an invisible glance. Finally, the deputies returned <a href="#" class="hintanchor" onMouseover="showhint('abashed = embarrassed', this, event, '150px')">abashed</a> to their constituents, pronouncing the matter too weighty to be handled, except by a council of the churches, if, indeed, it might not require a general <a href="#" class="hintanchor" onMouseover="showhint('synod = very large group of churches', this, event, '150px')">synod</a>.</p>
+
+
+
+<p align="right">&quot;The Minister's Black Veil&quot;, continued&nbsp;&nbsp;<a href="mbv.html">1</a> 
+&nbsp;<a href="mbv2.html">2</a>
+&nbsp;3
+&nbsp;<a href="mbv4.html">4</a>
+&nbsp;<a href="mbv5.html">5</a>
+&nbsp;<a href="mbv6.html">6</a>
+&nbsp;<a href="mbv7.html">Discussion</a></p>
+
+</font>
+</td>
+</tr>
+</table>
+
+
+</body>
+</html>

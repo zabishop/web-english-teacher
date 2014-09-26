@@ -1,0 +1,64 @@
+.cse .gsc-control-cse, .gsc-control-cse {
+	padding: 0;
+	border: none;
+}
+
+.cse form.gsc-search-box, form.gsc-search-box {
+margin: 0;
+padding: 0;
+}
+
+.cse form.gsc-search-box, form.gsc-search-box {
+	background: none;
+	border: none;
+	float: right;
+	margin: 0;
+}
+
+.cse .gsc-control-cse, .gsc-control-cse {
+	background: none;
+	border: none;
+}
+
+.cse form.gsc-search-box, form.gsc-search-box {
+	border: none;
+	box-shadow: none;
+}
+
+.cse input.gsc-search-button, input.gsc-search-button {
+	background: #25aae1;
+	color: white;
+}
+table.gsc-search-box {
+	margin: 0;
+}
+
+#cse {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+	float: auto;
+	margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 481px) {
+	#cse {
+		width: 35%;
+		margin-bottom: 0;
+		display: inline-block;
+		vertical-align: bottom;
+		margin-bottom: 2em;
+	}
+}
+
+
+@media only screen and (min-width: 970px) {
+	#cse {
+		width: 40%;
+		margin-top: 1em;
+		margin-left: 4em;
+		display: inline-block;
+		position: relative;
+		vertical-align: top;
+	}
+}

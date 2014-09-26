@@ -1,0 +1,1 @@
+[22-Jan-2014 13:27:37 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home/webengli/public_html/beardimaging/wp-content/themes/twentythirteen/404.php on line 10

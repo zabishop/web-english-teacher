@@ -1,0 +1,1007 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>"The Cask of Amontillado"</title>
+
+<style type="text/css">
+#hintbox{ /*CSS for pop up hint box */
+position:absolute;
+top: 0;
+background-color: lightyellow;
+width: 150px; /*Default width of hint.*/ 
+padding: 3px;
+border:1px solid navy;
+font:normal 11px Verdana;
+line-height:18px;
+z-index:100;
+border-right: 3px solid navy;
+border-bottom: 3px solid navy;
+visibility: hidden;
+}
+.hintanchor{ /*CSS for link that shows hint onmouseover*/
+
+color: navy;
+margin: 3px 3px;
+}
+.number {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 10px;
+	font-style: italic;
+	font-weight: normal;
+}
+</style>
+<script type="text/javascript">
+  
+var horizontal_offset="9px" //horizontal offset of hint box from anchor link
+/////No further editting needed
+var vertical_offset="0" //horizontal offset of hint box from anchor link. No need to change.
+var ie=document.all
+var ns6=document.getElementById&&!document.all
+function getposOffset(what, offsettype){
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+function clearbrowseredge(obj, whichedge){
+var edgeoffset=(whichedge=="rightedge")? parseInt(horizontal_offset)*-1 : parseInt(vertical_offset)*-1
+if (whichedge=="rightedge"){
+var windowedge=ie && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-30 : 
+
+window.pageXOffset+window.innerWidth-40
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetWidth+parseInt(horizontal_offset)
+}
+else{
+var windowedge=ie && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : 
+
+window.pageYOffset+window.innerHeight-18
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetHeight
+}
+return edgeoffset
+}
+function showhint(menucontents, obj, e, tipwidth){
+if ((ie||ns6) && document.getElementById("hintbox")){
+dropmenuobj=document.getElementById("hintbox")
+dropmenuobj.innerHTML=menucontents
+dropmenuobj.style.left=dropmenuobj.style.top=-500
+if (tipwidth!=""){
+dropmenuobj.widthobj=dropmenuobj.style
+dropmenuobj.widthobj.width=tipwidth
+}
+dropmenuobj.x=getposOffset(obj, "left")
+dropmenuobj.y=getposOffset(obj, "top")
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+obj.offsetWidth+"px"
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+"px"
+dropmenuobj.style.visibility="visible"
+obj.onmouseout=hidetip
+}
+}
+function hidetip(e){
+dropmenuobj.style.visibility="hidden"
+dropmenuobj.style.left="-500px"
+}
+function createhintbox(){
+var divblock=document.createElement("div")
+divblock.setAttribute("id", "hintbox")
+document.body.appendChild(divblock)
+}
+if (window.addEventListener)
+window.addEventListener("load", createhintbox, false)
+else if (window.attachEvent)
+window.attachEvent("onload", createhintbox)
+else if (document.getElementById)
+window.onload=createhintbox
+</script>
+
+<link href="poeCSS.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+
+<table width="600" cellpadding="8" cellspacing="0">
+<tr>
+<td colspan="2">
+<img src="amontillado.jpg" alt="The Cask of Amontillado" width="440" height="281">
+</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">1</td>
+
+<td>
+The thousand injuries of Fortunato I had borne as I best could, but when he ventured upon insult I vowed revenge. You, who so well know the nature of my soul, will not suppose, however, that I gave utterance to a threat. At length I would be avenged; this was a point definitely settled &mdash;but the very definitiveness with which it was resolved <a href="#" class="hintanchor" onMouseover="showhint('precluded the idea of risk = eliminated the idea of risk OR made failure not an option', this, event, '150px')">precluded the idea of risk</a>. I must not only punish but punish with <a href="#" class="hintanchor" onMouseover="showhint('impunity = without being punished', this, event, '150px')">impunity</a>. A wrong is <a href="#" class="hintanchor" onMouseover="showhint('unredressed = not made right', this, event, '150px')">unredressed</a> when <a href="#" class="hintanchor" 
+onMouseover="showhint('retribution = payback', this, event, '150px')">retribution</a> overtakes its redresser. It is equally unredressed when the avenger fails to make himself felt as such to him who has done the wrong.</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">2</td>
+
+<td>
+It must be understood that neither by word nor deed had I given Fortunato cause to doubt my good will. 
+
+I continued as was my <a href="#" class="hintanchor" onMouseover="showhint('wont = habit or custom', this, event, 
+
+'150px')">wont</a>, to smile in his face, and he did not perceive that my smile NOW was at the thought of his <a href="#" 
+
+class="hintanchor" onMouseover="showhint('immolation = destruction, sacrifice', this, event, '150px')">immolation</a>. 
+</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">3</td>
+
+<td>
+<p>He had a weak point &mdash; this Fortunato &mdash; although in other regards he was a man to be respected and even 
+
+feared. He prided himself on his <a href="#" class="hintanchor" onMouseover="showhint('connoisseurship = expert status', 
+
+this, event, '150px')">connoisseurship</a> in wine. Few Italians have the true virtuoso spirit. For the most part their 
+
+enthusiasm is adopted to suit the time and opportunity, to <a href="#" class="hintanchor" onMouseover="showhint('practice imposture = to fool or deceive', this, event, 
+
+'150px')">practice imposture</a> upon the British and Austrian millionaires. 
+
+In painting and gemmary, Fortunato, like his countrymen, was a quack, but in the matter of old wines he was sincere. In this 
+
+respect I did not differ from him materially; &mdash;I was skilful in the Italian vintages myself, and bought largely 
+
+whenever I could.</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">4</td>
+
+<td>
+
+It was about dusk, one evening during the supreme madness of  <a href="#" class="hintanchor" onMouseover="showhint('the carnival season = days of wild partying ending with Ash Wednesday and Lent', this, event, 
+
+'150px')">the Carnival season</a>, 
+
+that I encountered my friend. He accosted me with excessive warmth, for he had been drinking much. The man wore motley. He 
+
+had on a tight-fitting parti-striped dress, and his head was surmounted by the conical cap and bells. I was so pleased to see 
+
+him that I thought I should never have done wringing his hand.</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">5</td>
+
+<td>
+
+I said to him &mdash;&quot;My dear Fortunato, you are luckily met. How remarkably well you are looking to-day. But I have received 
+
+<a href="#" class="hintanchor" onMouseover="showhint('a pipe = a large cask of wine', this, event, '150px')">a pipe</a> of 
+
+what passes for <a href="#" class="hintanchor" onMouseover="showhint('Amontillado = a medium dry sherry, wine', this, event, 
+
+'150px')">Amontillado</a>, and I have my doubts.&quot; </td>
+</tr>
+
+<tr>
+<td valign="top" class="number">6</td>
+
+<td>
+&quot;How?&quot; said he. &quot;Amontillado, A pipe? Impossible! And in the middle of the carnival!&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">7</td>
+
+<td>
+&quot;I have my doubts,&quot; I replied; &quot;and I was silly enough to pay the full Amontillado price 
+
+without consulting you in the matter. You were not to be found, and I was fearful of losing a bargain.&quot; </td>
+</tr>
+
+<tr>
+<td valign="top" class="number">8</td>
+
+<td>
+&quot;Amontillado!&quot; </td>
+</tr>
+
+<tr>
+<td valign="top" class="number">9</td>
+
+<td>
+&quot;I have my doubts.&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">10</td>
+
+<td>
+&quot;Amontillado!&quot; </td>
+</tr>
+
+<tr>
+<td valign="top" class="number">11</td>
+
+<td>
+&quot;And I must satisfy them.&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">12</td>
+
+<td>
+&quot;Amontillado!&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">13</td>
+
+<td>
+&quot;As you are engaged, I am on my way to Luchresi. If any one has a critical turn it is he. 
+
+He will tell me &mdash;&quot; </td>
+</tr>
+
+<tr>
+<td valign="top" class="number">14</td>
+
+<td>
+ <a href="#" class="hintanchor" onMouseover="showhint('Amontillado is a type of sherry. Fortunato is making a bad joke.', this, event, 
+
+'150px')">&quot;Luchresi cannot tell Amontillado from Sherry.&quot;</a>
+
+</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">15</td>
+
+<td>
+&quot;And yet some fools will have it that his taste is a match for your own.&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">16</td>
+
+<td>
+&quot;Come, let us go.&quot; </td>
+</tr>
+
+<tr>
+<td valign="top" class="number">17</td>
+
+<td>
+&quot;Whither?&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">18</td>
+
+<td>
+&quot;To your vaults.&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">19</td>
+
+<td>
+&quot;My friend, no; I will not impose upon your good nature. I perceive you have an 
+
+engagement. Luchresi--&quot; </td>
+</tr>
+
+<tr>
+<td valign="top" class="number">20</td>
+
+<td>
+&quot;I have no engagement; &mdash;come.&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">21</td>
+
+<td>
+&quot;My friend, no. It is not the engagement, but the severe cold with which I perceive you 
+
+are afflicted. The vaults are insufferably damp. They are encrusted with <a href="#" class="hintanchor" 
+
+onMouseover="showhint('nitre = a mineral that grows on cavern walls and in damp places', this, event, 
+
+'150px')">nitre</a>.&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">22</td>
+
+<td>
+&quot;Let us go, nevertheless. The cold is merely nothing. Amontillado! You have been imposed 
+
+upon. And as for Luchresi, he cannot distinguish Sherry from Amontillado.&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">23</td>
+
+<td>
+Thus speaking, Fortunato possessed himself of my arm; and putting on a mask of black silk 
+
+and drawing a <a href="#" class="hintanchor" onMouseover="showhint('roquelaure - a knee-length cloak', this, event, 
+
+'150px')">roquelaure</a> closely about my person, I suffered him to hurry me to my <a href="#" class="hintanchor" 
+
+onMouseover="showhint('a large home, an estate', this, event, '150px')">palazzo</a>.</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  24 </td>
+
+<td>
+There were no attendants at home; they had  <a href="#" class="hintanchor" onMouseover="showhint('absconded to make merry = left to go party', this, event, 
+
+'150px')">absconded to make merry</a> in honour of the time. 
+
+I had told them that I should not return until the morning, and had given them explicit orders not to stir from the house. 
+
+These orders were sufficient, I well knew, to insure their immediate disappearance, one and all, as soon as my back was 
+
+turned.</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  25 </td>
+
+<td>
+I took from their sconces <a href="#" class="hintanchor" onMouseover="showhint('two flambeaux = two flaming torches', this, event, 
+
+'150px')">two flambeaux</a>, and giving one to Fortunato, bowed him through 
+
+several suites of rooms to the archway that led into the vaults. I passed down a long and winding staircase, requesting him 
+
+to be cautious as he followed. We came at length to the foot of the descent, and stood together upon the damp ground of the 
+
+<a href="#" class="hintanchor" onMouseover="showhint('catacombs = underground passages used as a family cemetery', this, 
+
+event, '150px')">catacombs</a> of the Montresors.</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  26 </td>
+
+<td>
+The gait of my friend was unsteady, and the bells upon his cap jingled as he strode.</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  27 </td>
+
+<td>
+&quot;The pipe,&quot; he said. </td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  28 </td>
+
+<td>
+&quot;It is farther on,&quot; said I; &quot;but observe the white web-work which gleams from these cavern 
+
+walls.&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  29 </td>
+
+<td>
+He turned towards me, and looked into my eyes with two filmy orbs that distilled the <a 
+
+href="#" class="hintanchor" onMouseover="showhint('rheum = watery discharge, tears', this, event, '150px')">rheum</a> of 
+
+intoxication. </td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  30 </td>
+
+<td>
+&quot;Nitre?&quot; he asked, at length.</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  31 </td>
+
+<td>
+&quot;Nitre,&quot; I replied. &quot;How long have you had that cough?&quot; </td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  32 </td>
+
+<td>
+&quot;Ugh! ugh! ugh! &mdash;ugh! ugh! ugh! &mdash;ugh! ugh! ugh! &mdash;ugh! ugh! ugh! 
+
+&mdash;ugh! ugh! ugh!&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  33 </td>
+
+<td>
+My poor friend found it impossible to reply for many minutes.</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  34 </td>
+
+<td>
+&quot;It is nothing,&quot; he said, at last. </td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  35 </td>
+
+<td>
+&quot;Come,&quot; I said, with decision, &quot;we will go back; your health is precious. You are rich, 
+
+respected, admired, beloved; you are happy, as once I was. You are a man to be missed. For me it is no matter. We will go 
+
+back; you will be ill, and I cannot be responsible. Besides, there is Luchresi &mdash;&quot; </td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  36 </td>
+
+<td>
+&quot;Enough,&quot; he said; &quot;the cough's a mere nothing; it will not kill me. I shall not die of a 
+
+cough.&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  37 </td>
+
+<td>
+&quot;True &mdash;true,&quot; I replied; &quot;and, indeed, I had no intention of alarming you 
+
+unnecessarily &mdash;but you should use all proper caution. A  <a href="#" class="hintanchor" onMouseover="showhint('draught, pronounced like DRAFT = a drink', this, event, 
+
+'150px')">draught</a> of this Medoc will defend us from the damps.&quot; </td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  38 </td>
+
+<td>
+Here I knocked off the neck of a bottle which I drew from a long row of its fellows that 
+
+lay upon the mould. </td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  39 </td>
+
+<td>
+&quot;Drink,&quot; I said, presenting him the wine.</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  40 </td>
+
+<td>
+He raised it to his lips with a leer. He paused and nodded to me familiarly, while his 
+
+bells jingled.</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  41 </td>
+
+<td>
+&quot;I drink,&quot; he said, &quot;to the buried that repose around us.&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  42 </td>
+
+<td>
+&quot;And I to your long life.&quot; </td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  43 </td>
+
+<td>
+He again took my arm, and we proceeded.</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  44 </td>
+
+<td>
+&quot;These vaults,&quot; he said, &quot;are extensive.&quot; </td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  45 </td>
+
+<td>
+&quot;The Montresors,&quot; I replied, &quot;were a great and numerous family.&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  46 </td>
+
+<td>
+&quot;I forget your  <a href="#" class="hintanchor" onMouseover="showhint('arms = The Montresor family coat of arms', this, event, 
+
+'150px')">arms</a>.&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  47 </td>
+
+<td>
+ <a href="#" class="hintanchor" onMouseover="showhint('A huge golden human foot on a blue background. The foot is crushing a red serpent that is biting it', this, event, 
+
+'150px')">&quot;A huge human foot <em>d'or</em>, in a field azure; the foot crushes a serpent rampant whose fangs are imbedded in the heel.&quot;</a></td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  48 </td>
+
+<td>
+&quot;And the motto?&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  49 </td>
+
+<td>
+ <a href="#" class="hintanchor" onMouseover="showhint('No one attacks me and gets away with it.', this, event, 
+
+'150px')">&quot;<em>Nemo me impune lacessit</em>.&quot;</a></td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  50 </td>
+
+<td>
+&quot;Good!&quot; he said. </td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  51 </td>
+
+<td>
+The wine sparkled in his eyes and the bells jingled. My own fancy grew warm with the 
+
+Medoc. We had passed through long walls of piled skeletons, with casks and puncheons intermingling, into the inmost recesses 
+
+of the catacombs. I paused again, and this time I made bold to seize Fortunato by an arm above the elbow. </td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  52 </td>
+
+<td>
+&quot;The nitre!&quot; I said; &quot;see, it increases. It hangs like moss upon the vaults. We are below 
+
+the river's bed. The drops of moisture trickle among the bones. Come, we will go back ere it is too late. Your cough &mdash;&quot; 
+
+</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  53 </td>
+
+<td>
+&quot;It is nothing,&quot; he said; &quot;let us go on. But first, another draught of the Medoc.&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  54 </td>
+
+<td>
+I broke and reached him a flagon of De Grave. He emptied it at a breath. His eyes flashed 
+
+with a fierce light. He laughed and threw the bottle upwards with a <a href="#" class="hintanchor" 
+
+onMouseover="showhint('gesticulation = strong gesture', this, event, '150px')">gesticulation</a> I did not understand. </td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  55 </td>
+
+<td>
+I looked at him in surprise. He repeated the movement &mdash;a grotesque one.</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  56 </td>
+
+<td>
+&quot;You do not comprehend?&quot; he said. </td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  57 </td>
+
+<td>
+&quot;Not I,&quot; I replied. </td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  58 </td>
+
+<td>
+&quot;Then you are not of the brotherhood.&quot; </td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  59 </td>
+
+<td>
+&quot;How?&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  60 </td>
+
+<td>
+&quot;You are not of
+ <a href="#" class="hintanchor" onMouseover="showhint('The Masons are a religious group for men only.', this, event, 
+
+'150px')">the masons</a>.&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  61 </td>
+
+<td>
+&quot;Yes, yes,&quot; I said; &quot;yes, yes.&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  62 </td>
+
+<td>
+&quot;You? Impossible! A mason?&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  63 </td>
+
+<td>
+&quot;A mason,&quot; I replied.</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  64 </td>
+
+<td>
+&quot;A sign,&quot; he said, &quot;a sign.&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  65 </td>
+
+<td>
+&quot;It is this,&quot; I answered, producing from beneath the folds of my roquelaire <a href="#" 
+
+class="hintanchor" onMouseover="showhint('a trowel = a hand tool used by bricklayers, also called masons. Fortunato is making a pun.', this, event, 
+
+'150px')">a trowel</a>.</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  66 </td>
+
+<td>
+&quot;You jest,&quot; he exclaimed, recoiling a few paces. &quot;But let us proceed to the Amontillado.&quot; 
+
+</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  67 </td>
+
+<td>
+&quot;Be it so,&quot; I said, replacing the tool beneath the cloak and again offering him my arm. He 
+
+leaned upon it heavily. We continued our route in search of the Amontillado. We passed through a range of low arches, 
+
+descended, passed on, and descending again, arrived at a deep crypt, in which the foulness of the air caused our flambeaux 
+
+rather to glow than flame. </td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  68 </td>
+
+<td>
+At the most remote end of the crypt there appeared another less spacious. Its walls had 
+
+been lined with human remains, piled to the vault overhead, in the fashion of the great catacombs of Paris. Three sides of 
+
+this interior crypt were still ornamented in this manner. From the fourth side the bones had been thrown down, and lay 
+
+promiscuously upon the earth, forming at one point a mound of some size. Within the wall thus exposed by the displacing of 
+
+the bones, we perceived a still interior crypt or recess, in depth about four feet, in width three, in height six or seven. 
+
+It seemed to have been constructed for no especial use within itself, but formed merely the interval between two of the 
+
+colossal supports of the roof of the catacombs, and was backed by one of their circumscribing walls of solid granite. </p>
+</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">69</td>
+
+<td>
+   <p>It was <a href="#" class="hintanchor" onMouseover="showhint('in vain = it did not work', this, event, '150px')">in 
+
+vain</a> that Fortunato, uplifting his dull torch,
+
+ <a href="#" class="hintanchor" onMouseover="showhint('endeavoured = tried', this, event, 
+
+'150px')">endeavoured</a> to pry into the depth of the recess. Its termination the feeble light did not 
+
+enable us to see. </td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  70 </td>
+
+<td>
+&quot;Proceed,&quot; I said; &quot;herein is the Amontillado. As for Luchresi &mdash;&quot; </p>
+</td></tr>
+
+<tr>
+<td valign="top" class="number">  71 </td>
+
+<td>
+   <p>&quot;He is an ignoramus,&quot; interrupted my friend, as he stepped unsteadily forward, while I followed immediately at his 
+
+heels. In niche, and finding an instant he had reached the extremity of the niche, and finding his progress arrested by the 
+
+rock, stood stupidly bewildered. A moment more and I had
+
+ <a href="#" class="hintanchor" onMouseover="showhint('fettered him = chained him', this, event, 
+
+'150px')">fettered him</a> to the granite. In its surface were two iron staples, distant from each 
+
+other about two feet, horizontally. From one of these depended a short chain, from the other a padlock. Throwing the links 
+
+about his waist, it was but the work of a few seconds to secure it. He was too much astounded to resist. Withdrawing the key 
+
+I stepped back from the recess. </td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  72 </td>
+
+<td>
+&quot;Pass your hand,&quot; I said, &quot;over the wall; you cannot help feeling the nitre. Indeed, it is 
+
+very damp. Once more let me implore you to return. No? Then I must positively leave you. But I must first render you all the 
+
+little attentions in my power.&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  73 </td>
+
+<td>
+&quot;The Amontillado!&quot; 
+
+ <a href="#" class="hintanchor" onMouseover="showhint('ejaculated = said suddenly and forcefully', this, event, 
+
+'150px')">ejaculated</a> my friend, not yet recovered from his astonishment. </td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  74 </td>
+
+<td>
+&quot;True,&quot; I replied; &quot;the Amontillado.&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  75 </td>
+
+<td>
+As I said these words I busied myself among the pile of bones of which I have before 
+
+spoken. Throwing them aside, I soon uncovered a quantity of building stone and mortar. With these materials and with the aid 
+
+of my trowel, I began vigorously to wall up the entrance of the niche.</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  76 </td>
+
+<td>
+I had scarcely laid the first tier of the masonry when I discovered that the intoxication 
+
+of Fortunato had in a great measure worn off. The earliest indication I had of this was a low moaning cry from the depth of 
+
+the recess. It was not the cry of a drunken man. There was then a long and obstinate silence. I laid the second tier, and the 
+
+third, and the fourth; and then I heard the furious vibrations of the chain. The noise lasted for several minutes, during 
+
+which, that I might hearken to it with the more satisfaction, I ceased my labours and sat down upon the bones. When at last 
+
+the clanking subsided, I resumed the trowel, and finished without interruption the fifth, the sixth, and the seventh tier. 
+
+The wall was now nearly upon a level with my breast. I again paused, and holding the flambeaux over the mason-work, threw a 
+
+few feeble rays upon the figure within.</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  77 </td>
+
+<td>
+A succession of loud and shrill screams, bursting suddenly from the throat of the chained 
+
+form, seemed to thrust me violently back. For a brief moment I hesitated, I trembled. Unsheathing my rapier, I began to grope 
+
+with it about the recess; but the thought of an instant reassured me. I placed my hand upon the solid fabric of the 
+
+catacombs, and felt satisfied. I reapproached the wall; I replied to the yells of him who clamoured. I re-echoed, I aided, I 
+
+surpassed them in volume and in strength. I did this, and the clamourer grew still. </td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  78 </td>
+
+<td>
+It was now midnight, and my task was drawing to a close. I had completed the eighth, the 
+
+ninth and the tenth tier. I had finished a portion of the last and the eleventh; there remained but a single stone to be 
+
+fitted and plastered in. I struggled with its weight; I placed it partially in its destined position. But now there came from 
+
+out the niche a low laugh that erected the hairs upon my head. It was succeeded by a sad voice, which I had difficulty in 
+
+recognizing as that of the noble Fortunato. The voice said &mdash; </p>
+</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  79 </td>
+
+<td>
+
+   <p>&quot;Ha! ha! ha! &mdash;he! he! he! &mdash;a very good joke, indeed &mdash;an excellent jest. We will have many a rich 
+
+laugh about it at the palazzo &mdash;he! he! he! &mdash;over our wine &mdash;he! he! he!&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  80 </td>
+
+<td>
+&quot;The Amontillado!&quot; I said.</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  81 </td>
+
+<td>
+&quot;He! he! he! &mdash;he! he! he! &mdash;yes, the Amontillado. But is it not getting late? 
+
+Will not they be awaiting us at the palazzo, the Lady Fortunato and the rest? Let us be gone.&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  82 </td>
+
+<td>
+&quot;Yes,&quot; I said, &quot;let us be gone.&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  83 </td>
+
+<td>
+&quot;For the love of God, Montresor!&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  84 </td>
+
+<td>
+&quot;Yes,&quot; I said, &quot;for the love of God!&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  85 </td>
+
+<td>
+But to these words I hearkened in vain for a reply. I grew impatient. I called aloud 
+
+&mdash;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  86 </td>
+
+<td>
+&quot;Fortunato!&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  87 </td>
+
+<td>
+No answer. I called again &mdash;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  88 </td>
+
+<td>
+&quot;Fortunato!&quot;</td>
+</tr>
+
+<tr>
+<td valign="top" class="number">  89 </td>
+
+<td>
+No answer still. I thrust a torch through the remaining <a href="#" class="hintanchor" 
+
+onMouseover="showhint('aperture = opening', this, event, '150px')">aperture</a> and let it fall within. There came forth in 
+
+return only a jingling of the bells. My heart grew sick; it was the dampness of the catacombs that made it so. I hastened to 
+
+make an end of my labour. I forced the last stone into its position; I plastered it up. Against the new masonry I re-erected 
+
+the old <a href="#" class="hintanchor" onMouseover="showhint('rampart = protective wall', this, event, '150px')">rampart</a> 
+
+of bones. For the half of a century no mortal has disturbed them. <a class=hintanchor 
+      onmouseover="showhint('Rest in peace!', this, event, '150px')" 
+      href="#"><em>In 
+      pace requiescat!</em></a></font>
+
+
+
+
+
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<hr>
+<br><br>
+
+
+Directions: Answer the questions below.
+
+<ol>
+<li>Re-read the first paragraph of &quot;The Cask of Amontillado.&quot; What does the narrator think of himself? To whom might he be speaking?</li>
+
+<li>The narrator tells us that he had dealt with &quot;injuries&quot; and finally even an &quot;insult&quot; from Fortunato. What examples can you find in the story to support the narrator's perception that Fortunato really is so rude?</li>
+
+<li>In paragraph 42, Montresor says he drinks to Fortunato's &quot;long life.&quot; Now that you have read the whole story, what double meaning can you understand?</li>
+<li>Re-read the final paragraph. Does Montresor feel any remorse for his actions? Explain your answer.</li>
+<li>List two ways this story would be different if it were told by Fortunato, waiting to die in the crypt.</li>
+
+</ol>
+</td>
+</tr>
+</table>
+<div id="tipDiv" style="position:absolute; visibility:hidden; z-index:100"></div>      
+</body>
+</html>
+

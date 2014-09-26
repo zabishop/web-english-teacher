@@ -1,0 +1,14 @@
+div.headertwitter {
+    width: 116px;
+    position: relative;
+    top: 15px;
+    display: inline;
+    margin-left: 350px;
+}
+
+div.headerfacebook {
+    width: 116px;
+    position: relative;
+    top: 15px;
+    display: inline;
+}

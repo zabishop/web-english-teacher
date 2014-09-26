@@ -1,0 +1,313 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>"The Tell-Tale Heart"</title>
+
+<style type="text/css">
+#hintbox{ /*CSS for pop up hint box */
+position:absolute;
+top: 0;
+background-color: lightyellow;
+width: 150px; /*Default width of hint.*/ 
+padding: 3px;
+border:1px solid navy;
+font:normal 12px verdana, sans-serif;
+line-height:18px;
+z-index:100;
+border-right: 3px solid navy;
+border-bottom: 3px solid navy;
+visibility: hidden;
+}
+.hintanchor{ /*CSS for link that shows hint onmouseover*/
+color: navy;
+margin: 3px 4px;
+}
+</style>
+<script type="text/javascript">
+  
+var horizontal_offset="9px" //horizontal offset of hint box from anchor link
+/////No further editting needed
+var vertical_offset="0" //horizontal offset of hint box from anchor link. No need to change.
+var ie=document.all
+var ns6=document.getElementById&&!document.all
+function getposOffset(what, offsettype){
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+function clearbrowseredge(obj, whichedge){
+var edgeoffset=(whichedge=="rightedge")? parseInt(horizontal_offset)*-1 : parseInt(vertical_offset)*-1
+if (whichedge=="rightedge"){
+var windowedge=ie && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-30 : window.pageXOffset+window.innerWidth-40
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetWidth+parseInt(horizontal_offset)
+}
+else{
+var windowedge=ie && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : window.pageYOffset+window.innerHeight-18
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetHeight
+}
+return edgeoffset
+}
+function showhint(menucontents, obj, e, tipwidth){
+if ((ie||ns6) && document.getElementById("hintbox")){
+dropmenuobj=document.getElementById("hintbox")
+dropmenuobj.innerHTML=menucontents
+dropmenuobj.style.left=dropmenuobj.style.top=-500
+if (tipwidth!=""){
+dropmenuobj.widthobj=dropmenuobj.style
+dropmenuobj.widthobj.width=tipwidth
+}
+dropmenuobj.x=getposOffset(obj, "left")
+dropmenuobj.y=getposOffset(obj, "top")
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+obj.offsetWidth+"px"
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+"px"
+dropmenuobj.style.visibility="visible"
+obj.onmouseout=hidetip
+}
+}
+function hidetip(e){
+dropmenuobj.style.visibility="hidden"
+dropmenuobj.style.left="-500px"
+}
+function createhintbox(){
+var divblock=document.createElement("div")
+divblock.setAttribute("id", "hintbox")
+document.body.appendChild(divblock)
+}
+if (window.addEventListener)
+window.addEventListener("load", createhintbox, false)
+else if (window.attachEvent)
+window.attachEvent("onload", createhintbox)
+else if (document.getElementById)
+window.onload=createhintbox
+</script>
+
+
+</head>
+
+<body>
+<table width="600" cellpadding="5" cellspacing="0">
+<tr>
+<td colspan="2">
+<img src="heart.jpg" alt="The Tell-Tale Heart" width="600" height="146" border="1">
+</td>
+</tr>
+
+<tr>
+<td valign="top">
+<font face="times, serif" size="1"><em>1</em></td>
+
+<td>
+<font face="times, serif" size="3">
+TRUE! nervous, very, very dreadfully nervous I had been and am; but why WILL you say that I am mad? The disease had sharpened my senses, not destroyed, not dulled them. Above all was the sense of hearing <a href="#" class="hintanchor" onMouseover="showhint('acute = sharp, intense', this, event, '150px')">acute</a>. I heard all things in the heaven and in the earth. I heard many things in hell. How then am I mad? Hearken! and observe how healthily, how calmly, I can tell you the whole story.
+</td>
+</tr>
+
+<tr>
+<td valign="top">
+<font face="times, serif" size="1"><em>2</em></td>
+
+<td>
+<font face="times, serif" size="3">
+
+It is impossible to say how first the idea entered my brain, but, once conceived, it haunted me day and night. Object there was none. Passion there was none. I loved the old man. He had never wronged me. He had never given me insult. For his gold I had no desire. I think it was his eye! Yes, it was this! One of his eyes resembled that of a vulture &mdash; a pale blue eye with a film over it. Whenever it fell upon me my blood ran cold, and so by degrees, very gradually, I made up my mind to take the life of the old man, and thus rid myself of the eye for ever.</td>
+</tr>
+
+<tr>
+<td valign="top">
+<font face="times, serif" size="1"><em>3</em></td>
+
+<td>
+<font face="times, serif" size="3">
+
+Now this is the point. You fancy me mad. Madmen know nothing. But you should have seen me. You should have seen how wisely I proceeded &mdash; with what caution &mdash; with what foresight, with what <a href="#" class="hintanchor" onMouseover="showhint('dissimulation = deception', this, event, '150px')">dissimulation</a>, I went to work! I was never kinder to the old man than during the whole week before I killed him. And every night about midnight I turned the latch of his door and opened it oh, so gently! And then, when I had made an opening <a href="#" class="hintanchor" onMouseover="showhint('sufficient = enough', this, event, '150px')">sufficient</a> for my head, I put in a dark lantern all closed, closed so that no light shone out, and then I thrust in my head. Oh, you would have laughed to see how cunningly I thrust it in! I moved it slowly, very, very slowly, so that I might not disturb the old man's sleep. It took me an hour to place my whole head within the opening so far that I could see him as he lay upon his bed. Ha! would a madman have been so wise as this? And then when my head was well in the room I undid the lantern cautiously &mdash; oh, so cautiously &mdash; cautiously (for the hinges creaked), I undid it just so much that a single thin ray fell upon the vulture eye. And this I did for seven long nights, every night just at midnight, but I found the eye always closed, and so it was impossible to do the work, for it was not the old man who vexed me but his Evil Eye. And every morning, when the day broke, I went boldly into the chamber and spoke courageously to him, calling him by name in a hearty tone, and inquiring how he had passed the night. So you see he would have been a very <a href="#" class="hintanchor" onMouseover="showhint('profound = insightful, smart', this, event, '150px')">profound</a> old man, indeed , to suspect that every night, just at twelve, I looked in upon him while he slept. </td>
+</tr>
+
+<tr>
+<td valign="top">
+<font face="times, serif" size="1"><em>4</em></td>
+
+<td>
+<font face="times, serif" size="3">
+
+Upon the eighth night I was more than usually cautious in opening the door. A watch's minute hand moves more quickly than did mine. Never before that night had I felt the extent of my own powers, of my <a href="#" class="hintanchor" onMouseover="showhint('sagacity = wisdom<br>Do you agree with the narrator that he is wise?', this, event, '150px')">sagacity</a>. I could scarcely contain my feelings of triumph. To think that there I was opening the door little by little, and he not even to dream of my secret deeds or thoughts. I fairly chuckled at the idea, and perhaps he heard me, for he moved on the bed suddenly as if startled. Now you may think that I drew back -- but no. His room was as black as pitch with the thick darkness (for the shutters were close fastened through fear of robbers), and so I knew that he could not see the opening of the door, and I kept pushing it on steadily, steadily.</td>
+</tr>
+
+<tr>
+<td valign="top">
+<font face="times, serif" size="1"><em>5</em></td>
+
+<td>
+<font face="times, serif" size="3">
+
+I had my head in, and was about to open the lantern, when my thumb slipped upon the tin fastening , and the old man sprang up in the bed, crying out, &quot;Who's there?&quot;</td>
+</tr>
+
+<tr>
+<td valign="top">
+<font face="times, serif" size="1"><em>6</em></td>
+
+<td>
+<font face="times, serif" size="3">
+I kept quite still and said nothing. For a whole hour I did not move a muscle, and in the meantime I did not hear him lie down. He was still sitting up in the bed, listening; just as I have done night after night hearkening to the death watches in the wall.</td>
+</tr>
+
+<tr>
+<td valign="top">
+<font face="times, serif" size="1"><em>7</em></td>
+
+<td>
+<font face="times, serif" size="3">
+Presently, I heard a slight groan, and I knew it was the groan of mortal terror. It was not a groan of pain or of grief &mdash; oh, no! It was the low stifled sound that arises from the bottom of the soul when overcharged with awe. I knew the sound well. Many a night, just at midnight, when all the world slept, it has welled up from my own bosom, deepening, with its dreadful echo, the terrors that distracted me. I say I knew it well. I knew what the old man felt, and pitied him although I chuckled at heart. I knew that he had been lying awake ever since the first slight noise when he had turned in the bed. His fears had been ever since growing upon him. He had been trying to fancy them causeless, but could not. He had been saying to himself, "It is nothing but the wind in the chimney, it is only a mouse crossing the floor," or, "It is merely a cricket which has made a single chirp." Yes he has been trying to comfort himself with these suppositions; but he had found all <a href="#" class="hintanchor" onMouseover="showhint('in vain = useless', this, event, '150px')">in vain</a>. ALL IN VAIN, because Death in approaching him had stalked with his black shadow before him and enveloped the victim. And it was the mournful influence of the <a href="#" class="hintanchor" onMouseover="showhint('unperceived = unseen', this, event, '150px')">unperceived</a> shadow that caused him to feel, although he neither saw nor heard, to feel the presence of my head within the room.</td>
+</tr>
+
+<tr>
+<td valign="top">
+<font face="times, serif" size="1"><em>8</em></td>
+
+<td>
+<font face="times, serif" size="3">
+When I had waited a long time very patiently without hearing him lie down, I resolved to open a little &mdash; a very, very little <a href="#" class="hintanchor" onMouseover="showhint('crevice = crack, fissure', this, event, '150px')">crevice</a> in the lantern. So I opened it &mdash; you cannot imagine how stealthily, stealthily &mdash; until at length a single dim ray like the thread of the spider shot out from the crevice and fell upon the vulture eye.</td>
+</tr>
+
+<tr>
+<td valign="top">
+<font face="times, serif" size="1"><em>9</em></td>
+
+<td>
+<font face="times, serif" size="3">
+It was open, wide, wide open, and I grew furious as I gazed upon it. I saw it with perfect distinctness &mdash; all a dull blue with a hideous veil over it that chilled the very marrow in my bones, but I could see nothing else of the old man's face or person, for I had directed the ray as if by instinct precisely upon the damned spot.</td>
+</tr>
+
+<tr>
+<td valign="top">
+<font face="times, serif" size="1"><em>10</em></td>
+
+<td>
+<font face="times, serif" size="3">
+
+And now have I not told you that what you mistake for madness is but over-acuteness of the senses? now, I say, there came to my ears a low, dull, quick sound, such as a watch makes when enveloped in cotton. I knew that sound well too. It was the beating of the old man's heart. It increased my fury as the beating of a drum stimulates the soldier into courage.</td>
+</tr>
+
+<tr>
+<td valign="top">
+<font face="times, serif" size="1"><em>11</em></td>
+
+<td>
+<font face="times, serif" size="3">
+
+But even yet I refrained and kept still. I scarcely breathed. I held the lantern motionless. I tried how steadily I could maintain the ray upon the eye. Meantime the hellish <a href="#" class="hintanchor" onMouseover="showhint('tattoo = quick, rhythmic tapping', this, event, '150px')">tattoo</a> of the heart increased. It grew quicker and quicker, and louder and louder, every instant. The old man's terror must have been extreme! It grew louder, I say, louder every moment! &mdash; do you mark me well? I have told you that I am nervous: so I am. And now at the dead hour of the night, amid the dreadful silence of that old house, so strange a noise as this excited me to uncontrollable terror. Yet, for some minutes longer I refrained and stood still. But the beating grew louder, louder! I thought the heart must burst. And now a new anxiety seized me &mdash; the sound would be heard by a neighbour! The old man's hour had come! With a loud yell, I threw open the lantern and leaped into the room. He shrieked once &mdash; once only. In an instant I dragged him to the floor, and pulled the heavy bed over him. I then smiled gaily, to find the deed so far done. But for many minutes the heart beat on with a muffled sound. This, however, did not vex me; it would not be heard through the wall. At length it ceased. The old man was dead. I removed the bed and examined the corpse. Yes, he was stone, stone dead. I placed my hand upon the heart and held it there many minutes. There was no pulsation. He was stone dead. His eye would trouble me no more. </td>
+</tr>
+
+<tr>
+<td valign="top">
+<font face="times, serif" size="1"><em>12</em></td>
+
+<td>
+<font face="times, serif" size="3">
+
+If still you think me mad, you will think so no longer when I describe the wise precautions I took for the concealment of the body. The night <a href="#" class="hintanchor" onMouseover="showhint('waned = dwindled or ebbed; in other words, morning was coming', this, event, '150px')">waned</a>, and I worked hastily, but in silence.</td>
+</tr>
+
+<tr>
+<td valign="top">
+<font face="times, serif" size="1"><em>13</em></td>
+
+<td>
+<font face="times, serif" size="3">
+
+I took up three planks from the flooring of the chamber, and deposited all between the <a href="#" class="hintanchor" onMouseover="showhint('scantlings = floor joists', this, event, '150px')">scantlings</a>. I then replaced the boards so cleverly so cunningly, that no human eye &mdash; not even his &mdash; could have detected anything wrong. There was nothing to wash out &mdash; no stain of any kind &mdash; no blood-spot whatever. I had been too wary for that. </td>
+</tr>
+
+<tr>
+<td valign="top">
+<font face="times, serif" size="1"><em>14</em></td>
+
+<td>
+<font face="times, serif" size="3">
+
+When I had made an end of these labours, it was four o'clock &mdash; still dark as midnight. As the bell sounded the hour, there came a knocking at the street door. I went down to open it with a light heart, &mdash; for what had I now to fear? There entered three men, who introduced themselves, with perfect <a href="#" class="hintanchor" onMouseover="showhint('suavity = grace or style', this, event, '150px')">suavity</a>, as officers of the police. A shriek had been heard by a neighbour during the night; suspicion of foul play had been aroused; information had been lodged at the police office, and they (the officers) had been <a href="#" class="hintanchor" onMouseover="showhint('deputed = assigned or sent', this, event, '150px')">deputed</a> to search the premises. </td>
+</tr>
+
+<tr>
+<td valign="top">
+<font face="times, serif" size="1"><em>15</em></td>
+
+<td>
+<font face="times, serif" size="3">
+
+I smiled, &mdash; for what had I to fear? I bade the gentlemen welcome. The shriek, I said, was my own in a dream. The old man, I mentioned, was absent in the country. I took my visitors all over the house. I bade them search &mdash; search well. I led them, at length, to his chamber. I showed them his treasures, secure, undisturbed. In the enthusiasm of my confidence, I brought chairs into the room, and desired them here to rest from their fatigues, while I myself, in the wild <a href="#" class="hintanchor" onMouseover="showhint('audacity = boldness', this, event, '150px')">audacity</a> of my perfect triumph, placed my own seat upon the very spot beneath which <a href="#" class="hintanchor" onMouseover="showhint('reposed = rested', this, event, '150px')">reposed</a> the corpse of the victim.</td>
+</tr>
+
+<tr>
+<td valign="top">
+<font face="times, serif" size="1"><em>16</em></td>
+
+<td>
+<font face="times, serif" size="3">
+
+The officers were satisfied. My MANNER had convinced them. I was singularly at ease. They sat and while I answered cheerily, they chatted of familiar things. But, ere long, I felt myself getting pale and wished them gone. My head ached, and I fancied a ringing in my ears; but still they sat, and still chatted. The ringing became more distinct: I talked more freely to get rid of the feeling: but it continued and gained definitiveness &mdash; until, at length, I found that the noise was NOT within my ears.</td>
+</tr>
+
+<tr>
+<td valign="top">
+<font face="times, serif" size="1"><em>17</em></td>
+
+<td>
+<font face="times, serif" size="3">
+
+No doubt I now grew VERY pale; but I talked more fluently, and with a heightened voice. Yet the sound increased &mdash; and what could I do? It was A LOW, DULL, QUICK SOUND &mdash; MUCH SUCH A SOUND AS A WATCH MAKES WHEN ENVELOPED IN COTTON. I gasped for breath, and yet the officers heard it not. I talked more quickly, more <a href="#" class="hintanchor" onMouseover="showhint('vehemently = powerfully, angrily', this, event, '150px')">vehemently</a> but the noise steadily increased. I arose and argued about trifles, in a high key and with violent <a href="#" class="hintanchor" onMouseover="showhint('gesticulations = strong gestures', this, event, '150px')">gesticulations</a>; but the noise steadily increased. Why WOULD they not be gone? I paced the floor to and fro with heavy strides, as if excited to fury by the observations of the men, but the noise steadily increased. O God! what COULD I do? I foamed &mdash;  I raved &mdash;  I swore! I swung the chair upon which I had been sitting, and grated it upon the boards, but the noise arose over all and continually increased. It grew louder &mdash;  louder &mdash;  louder! And still the men chatted pleasantly, and smiled. Was it possible they heard not? Almighty God! &mdash;  no, no? They heard! &mdash;  they suspected! &mdash;  they KNEW! &mdash;  they were making a mockery of my horror! &mdash;  this I thought, and this I think. But anything was better than this agony! Anything was more tolerable than this <a href="#" class="hintanchor" onMouseover="showhint('derision = scorn, ridicule', this, event, '150px')">derision</a>! I could bear those <a href="#" class="hintanchor" onMouseover="showhint('hypocritical = two-faced', this, event, '150px')">hypocritical</a> smiles no longer! I felt that I must scream or die! &mdash;  and now &mdash;  again &mdash;  hark! louder! louder! louder! LOUDER! &mdash;</td>
+</tr>
+
+<tr>
+<td valign="top">
+<font face="times, serif" size="1"><em>18</em></td>
+
+<td>
+<font face="times, serif" size="3">
+
+"Villains!" I shrieked, "<a href="#" class="hintanchor" onMouseover="showhint('dissemble = deceive, lie', this, event, '150px')">dissemble</a> no more! I admit the deed! &mdash;  tear up the planks! &mdash;  here, here! &mdash;  it is the beating of his hideous heart!" 
+
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<br><br><br>
+<hr>
+<br><br>
+<font face="times, serif" size="3">
+
+
+Directions: Answer the questions below.
+
+<ol>
+<li>Re-read the first paragraph of "The Tell-Tale Heart." What does it tell us about the narrator? What later event does it foreshadow?</li>
+<li>Look through the story and find 4 times when the narrator insists he is not mad. How does he seem to define madness? </li>
+
+<li>Is the reader meant to agree with the narrator when he says he is not mad? How do you know?</li>
+
+<li>In paragraph 18 the narrator says the officers "chatted pleasantly, and smiled." Do you think the officers would agree with this description? If you were an officer on a call at 4 A.M., listening to this narrator, what might you be thinking?</li>
+
+<li>List two things that would be different if this story had been told by the murder victim, speaking from the afterlife.</li> 
+</ol> 
+</td>
+</tr>
+</table>
+
+
+
+</body>
+</html>

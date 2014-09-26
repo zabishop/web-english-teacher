@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>"The Minister's Black Veil" by Nathaniel Hawthorne (p. 5)</title>
+<style type="text/css">
+#hintbox{ /*CSS for pop up hint box */
+position:absolute;
+top: 0;
+background-color: #E6F0FA;
+width: 150px; /*Default width of hint.*/ 
+padding: 3px;
+border:1px solid navy;
+font:normal 11px Verdana;
+line-height:18px;
+z-index:100;
+border-right: 3px solid navy;
+border-bottom: 3px solid navy;
+visibility: hidden;
+}
+.hintanchor{ /*CSS for link that shows hint onmouseover*/
+
+color: navy;
+margin: 3px 3px;
+}
+.number {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 10px;
+	font-style: italic;
+	font-weight: normal;
+}
+</style>
+<script type="text/javascript">
+  
+var horizontal_offset="9px" //horizontal offset of hint box from anchor link
+/////No further editing needed
+var vertical_offset="0" //horizontal offset of hint box from anchor link. No need to change.
+var ie=document.all
+var ns6=document.getElementById&&!document.all
+function getposOffset(what, offsettype){
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+function clearbrowseredge(obj, whichedge){
+var edgeoffset=(whichedge=="rightedge")? parseInt(horizontal_offset)*-1 : parseInt(vertical_offset)*-1
+if (whichedge=="rightedge"){
+var windowedge=ie && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-30 : 
+
+window.pageXOffset+window.innerWidth-40
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetWidth+parseInt(horizontal_offset)
+}
+else{
+var windowedge=ie && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : 
+
+window.pageYOffset+window.innerHeight-18
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetHeight
+}
+return edgeoffset
+}
+function showhint(menucontents, obj, e, tipwidth){
+if ((ie||ns6) && document.getElementById("hintbox")){
+dropmenuobj=document.getElementById("hintbox")
+dropmenuobj.innerHTML=menucontents
+dropmenuobj.style.left=dropmenuobj.style.top=-500
+if (tipwidth!=""){
+dropmenuobj.widthobj=dropmenuobj.style
+dropmenuobj.widthobj.width=tipwidth
+}
+dropmenuobj.x=getposOffset(obj, "left")
+dropmenuobj.y=getposOffset(obj, "top")
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+obj.offsetWidth+"px"
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+"px"
+dropmenuobj.style.visibility="visible"
+obj.onmouseout=hidetip
+}
+}
+function hidetip(e){
+dropmenuobj.style.visibility="hidden"
+dropmenuobj.style.left="-500px"
+}
+function createhintbox(){
+var divblock=document.createElement("div")
+divblock.setAttribute("id", "hintbox")
+document.body.appendChild(divblock)
+}
+if (window.addEventListener)
+window.addEventListener("load", createhintbox, false)
+else if (window.attachEvent)
+window.attachEvent("onload", createhintbox)
+else if (document.getElementById)
+window.onload=createhintbox
+</script>
+</head>
+
+<body bgcolor="#F2E3BA">
+<table width="600" align="center" cellpadding="20" cellspacing="0">
+<tr>
+<td bgcolor="#FFFFFF">
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+<p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><em><strong>Note: You may need to allow scripts to run while you are on this page.</strong></em></font></p>
+
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+
+<p align="center"><img src="graphics/veilslug.jpg" alt="The Minister's Black Veil" width="600" height="100" border="0"></p>
+<h5 align="right">page 5</h5>
+
+<p>From that time no attempts were made to remove Mr. Hooper's black veil, or, by a direct appeal, to discover the secret which it was supposed to hide. By persons who claimed a superiority to popular <a href="#" class="hintanchor" onMouseover="showhint('&quot;persons who claimed a superiority to popular prejudice&quot; = people who thought they knew more about it than anyone else', this, event, '150px')">prejudice</a>, it was reckoned merely an <a href="#" class="hintanchor" onMouseover="showhint('eccentric = odd', this, event, '150px')">eccentric</a> whim, such as often mingles with the sober actions of men otherwise rational, and tinges them all with its own semblance of insanity. But with the multitude, good Mr. Hooper was irreparably a <a href="#" class="hintanchor" onMouseover="showhint('&quot;irreparably a bugbear&quot; = always a problem', this, event, '150px')">bugbear</a>. He could not walk the street with any peace of mind, so conscious was he that the gentle and timid would turn aside to avoid him, and that others would make it a point of <a href="#" class="hintanchor" onMouseover="showhint('hardihood = courage<br>People would prove they were brave by going up and talking to Pastor Hooper.', this, event, '150px')">hardihood</a> to throw themselves in his way. The impertinence of the latter class <a href="#" class="hintanchor" onMouseover="showhint('compelled = forced', this, event, '150px')">compelled</a> him to give up his customary walk at sunset to the burial ground; for when he leaned <a href="#" class="hintanchor" onMouseover="showhint('pensively = thoughtfully', this, event, '150px')">pensively</a> over the gate, there would always be faces behind the gravestones, peeping at his black veil. A fable went the rounds that the stare of the dead people drove him thence. It grieved him, to the very depth of his kind heart, to observe how the children fled from his approach, breaking up their merriest sports, while his melancholy figure was yet afar off. Their instinctive <a href="#" class="hintanchor" onMouseover="showhint('instinctive dread = built-in fear', this, event, '150px')">dread</a> caused him to feel more strongly than <a href="#" class="hintanchor" onMouseover="showhint('aught = anything', this, event, '150px')">aught</a> else, that a <a href="#" class="hintanchor" onMouseover="showhint('preternatural = not of this world', this, event, '150px')">preternatural</a> horror was interwoven with the threads of the black crape. In truth, his own <a href="#" class="hintanchor" onMouseover="showhint('antipathy = dislike of', this, event, '150px')">antipathy</a> to the veil was known to be so great, that he never willingly passed before a mirror, nor stooped to drink at a still fountain, lest, in its peaceful bosom, he should be <a href="#" class="hintanchor" onMouseover="showhint('affrighted = frightened', this, event, '150px')">affrighted</a> by himself. This was what gave <a href="#" class="hintanchor" onMouseover="showhint('plausibility = a reason to believe', this, event, '150px')">plausibility</a> to the whispers, that Mr. Hooper's conscience tortured him for some great crime too horrible to be entirely concealed, or otherwise than so obscurely <a href="#" class="hintanchor" onMouseover="showhint('intimated = hinted at', this, event, '150px')">intimated</a>. Thus, from beneath the black veil, there rolled a cloud into the sunshine, an <a href="#" class="hintanchor" onMouseover="showhint('ambiguity = uncertainty', this, event, '150px')">ambiguity</a> of sin or sorrow, which enveloped the poor minister, so that love or sympathy could never reach him. It was said that ghost and fiend <a href="#" class="hintanchor" onMouseover="showhint('consorted = visited', this, event, '150px')">consorted</a> with him there. With self-shudderings and outward terrors, he walked continually in its shadow, groping darkly within his own soul, or gazing through a medium that saddened the whole world. Even the lawless wind, it was believed, respected his dreadful secret, and never blew aside the veil. But still good Mr. Hooper sadly smiled at the pale visages of the worldly throng as he passed by.</p>
+
+<p>Among all its bad influences, the black veil had the one desirable effect, of making its wearer a very efficient clergyman. By the aid of his mysterious emblem--for there was no other apparent cause--he became a man of <a href="#" class="hintanchor" onMouseover="showhint('This word has changed in meaning. Today we would say &quot;awesome.&quot;', this, event, '150px')">awful</a> power over souls that were in <a href="#" class="hintanchor" onMouseover="showhint('agony = great pain', this, event, '150px')">agony</a> for sin. His converts always regarded him with a dread peculiar to themselves, <a href="#" class="hintanchor" onMouseover="showhint('affirming = agreeing', this, event, '150px')">affirming</a>, though but <a href="#" class="hintanchor" onMouseover="showhint('figuratively = as a metaphor', this, event, '150px')">figuratively</a>, that, before he brought them to <a href="#" class="hintanchor" onMouseover="showhint('celestial = heavenly', this, event, '150px')">celestial</a> light, they had been with him behind the black veil. Its gloom, indeed, enabled him to sympathize with all dark affections. Dying sinners cried aloud for Mr. Hooper, and would not yield their breath till he appeared; though ever, as he stooped to whisper <a href="#" class="hintanchor" onMouseover="showhint('consolation = words of comfort', this, event, '150px')">consolation</a>, they shuddered at the veiled face so near their own. Such were the terrors of the black veil, even when Death had bared his <a href="#" class="hintanchor" onMouseover="showhint('Even people who could see Death in the room still shuddered when they saw Pastor Hooper&rsquo;s veil. Hawthorne wants the reader to understand how frightened people were.', this, event, '150px')">visage</a>! Strangers came long distances to attend service at his church, with the mere idle purpose of gazing at his figure, because it was forbidden them to behold his face. But many were made to <a href="#" class="hintanchor" onMouseover="showhint('quake = shake with fear', this, event, '150px')">quake</a> <a href="#" class="hintanchor" onMouseover="showhint('ere = before', this, event, '150px')">ere</a> they departed! Once, during Governor Belcher's administration, Mr. Hooper was appointed to preach the election sermon. Covered with his black veil, he stood before the chief magistrate, the council, and the representatives, and wrought so deep an impression that the legislative measures of that year were characterized by all the gloom and piety of our earliest ancestral <a href="#" class="hintanchor" onMouseover="showhint('&quot;characterized by all the gloom and piety of our earliest ancestral sway&quot; = the laws that year were as strict as those of the earliest Puritans', this, event, '150px')">sway</a>.</p>
+
+<p>In this manner Mr. Hooper spent a long life, <a href="#" class="hintanchor" onMouseover="showhint('irreproachable in outward act = his behavior was blameless', this, event, '150px')">irreproachable</a> in outward act, yet <a href="#" class="hintanchor" onMouseover="showhint('A shroud is like a sheet to wrap the dead in. When someone is &quot;shrouded in dismal suspicions,&quot;  everyone suspects they have done something terrible, even though there is no proof.', this, event, '150px')">shrouded</a> in dismal suspicions; kind and loving, though unloved, and dimly feared; a man apart from men, <a href="#" class="hintanchor" onMouseover="showhint('shunned = avoided', this, event, '150px')">shunned</a> in their health and joy, but ever summoned to their aid in <a href="#" class="hintanchor" onMouseover="showhint('&quot;mortal anguish&quot; = when they knew they were dying', this, event, '150px')">mortal anguish</a>. As years wore on, shedding their snows above his <a href="#" class="hintanchor" onMouseover="showhint('&quot;shedding their snows above his sable veil&quot; = his hair turned white, but his veil remained black', this, event, '150px')">sable veil</a>, he acquired a name throughout the New England churches, and they called him Father Hooper. Nearly all his parishioners, who were of mature age when he was settled, had been borne away by many a funeral: he had one congregation in the church, and a more crowded one in the churchyard; and having <a href="#" class="hintanchor" onMouseover="showhint('wrought = worked', this, event, '150px')">wrought</a> so late into the <a href="#" class="hintanchor" onMouseover="showhint('Here &quot;evening&quot; is used as a metaphor to mean old age.', this, event, '150px')">evening</a>, and done his work so well, it was now good Father Hooper's turn to <a href="#" class="hintanchor" onMouseover="showhint('Here &quot;rest&quot; is a metaphor meaning &lsquo;to die.&rsquo;', this, event, '150px')">rest</a>.</p>
+
+<p>Several persons were visible by the shaded candle-light, in the death chamber of the old clergyman. <a href="#" class="hintanchor" onMouseover="showhint('&quot;Natural connections&quot; means &quot;family.&quot;', this, event, '150px')">Natural connections</a> he had none. But there was the <a href="#" class="hintanchor" onMouseover="showhint('decorously grave = politely solemn', this, event, '150px')">decorously grave</a>, though <a href="#" class="hintanchor" onMouseover="showhint('unmoved = unemotional', this, event, '150px')">unmoved</a> physician, seeking only to mitigate the <a href="#" class="hintanchor" onMouseover="showhint('&quot;mitigate the last pangs&quot; = ease the final pain', this, event, '150px')">last pangs</a> of the patient whom he could not save. There were the deacons, and other eminently <a href="#" class="hintanchor" onMouseover="showhint('pious = religious', this, event, '150px')">pious</a> members of his church. There, also, was the Reverend Mr. Clark, of Westbury, a young and <a href="#" class="hintanchor" onMouseover="showhint('zealous divine = enthusiastic minister', this, event, '150px')">zealous divine</a>, who had ridden in haste to pray by the bedside of the <a href="#" class="hintanchor" onMouseover="showhint('expiring = dying', this, event, '150px')">expiring</a> minister. There was the nurse, no hired handmaiden of death, but one whose calm affection had <a href="#" class="hintanchor" onMouseover="showhint('Elizabeth is the nurse as Father Hooper dies. She never married. She was always in love with him.', this, event, '150px')">endured</a> thus long in secrecy, in solitude, amid the chill of age, and would not perish, even at the dying hour. Who, but Elizabeth! And there lay the hoary head of good Father Hooper upon the death pillow, with the black veil still swathed about his brow, and reaching down over his face, so that each more difficult gasp of his faint breath caused it to stir. All through life that piece of crape had hung between him and the world: it had separated him from cheerful brotherhood and woman's love, and kept him in that saddest of all prisons, his own heart; and still it lay upon his face, as if to deepen the gloom of his darksome chamber, and shade him from the sunshine of eternity.</p>
+
+
+<p align="right">&quot;The Minister's Black Veil&quot; continued &nbsp;<a href="mbv.html">1</a> 
+&nbsp;<a href="mbv2.html">2</a>
+&nbsp;<a href="mbv3.html">3</a>
+&nbsp;<a href="mbv4.html">4</a>
+&nbsp;5
+&nbsp;<a href="mbv6.html">6</a>
+&nbsp;<a href="mbv7.html">Discussion</a></p>
+
+</font>
+</td>
+</tr>
+</table>
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Calliope, Muse of Eloquence</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css"></style>
+<link rel="stylesheet" type="text/css" href="../msb/calliope/calliope-css.css" />
+</head>
+
+<body>
+
+<div class="container">
+  <div class="sidebar1">
+	<img src="../msb/calliope/images/calliope.jpg" width="180" height="295" alt="Calliope, Muse of Eloquence. Click here to return to the home page." />
+    <p>&nbsp;</p>
+	<!-- TemplateBeginEditable name="Navigation" -->  
+    <ul class="nav">
+      <li><a href="unit-1.html">Unit 1 Words</a></li>
+      <li><a href="unit-2.html">Unit 2 Words</a></li>
+      <li><a href="unit-3.html">Unit 3 Words</a></li>
+      <li><a href="unit-4.html">Unit 4 Words</a></li>
+      <li><a href="unit-5.html">Unit 5 Words</a></li>
+    </ul>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+ <!-- TemplateEndEditable -->
+
+
+  <!-- end .sidebar1 --></div>
+  <div class="content">
+  <img src="../msb/calliope/images/textslug.jpg" alt="Calliope, Muse of Eloquence" width="522" height="90" border="0" /><!-- TemplateBeginEditable name="Narrative/Response" -->Insert narrative here.
+  
+  
+  <!-- TemplateEndEditable -->
+
+
+
+    <!-- end .content --></div>
+  <!-- end .container --></div>
+</body>
+</html>
