@@ -1,4 +1,5 @@
 @charset "utf-8";
+/* test */
 html {
     height: 100%;
 }
@@ -153,16 +154,16 @@ select.mobile-selector {
 }
 
 div.sidenewsletter {
-    height: 125px;
-    background: url(../cgimages/sidebar1_green.gif) repeat-x;
+    height: auto;
+    background: #85b141 url(../cgimages/sidebar1_green.gif) repeat-x;
     padding: 0;
     width: 100%;
     text-align: center;
 }
 
 div.sidenewslettertext {
-    width: 155px;
-    height: 105px;
+    width: 300px;
+    height: auto;
     font-family: Verdana, Geneva, sans-serif;
     font-size: 13px;
     color: #FFF;
@@ -480,6 +481,19 @@ ul.mobile-nav li.nav-item {
 	text-align: center;
 }
 
+.mobile-only-ad {
+	display: block;
+	background: #85b141;
+}
+
+.mobile-only-ad img {
+	width: 95% !important;
+	padding: 2.5% 0;
+	display: block;
+	margin: 0 auto !important;
+	height: auto !important;
+}
+
 /* Tablet Layout */
 @media only screen and (min-width: 481px) {
 
@@ -487,6 +501,7 @@ ul.mobile-nav li.nav-item {
         width: 100%;
     }
 	
+
 	#vvohclightboxapi{
 		display: inline;
 	}
@@ -841,7 +856,30 @@ ul.mobile-nav li.nav-item {
         font-size: 13px;
         color: #cccccc;
     }
+	.mobile-only-ad {
+		display: block;
+		width: 100%;
+		background: #85B141;
+	}
+	
+	.mobile-only-ad img {
+		max-width: 300px;
+		display: block;
+		margin: 0 auto;
+	}
+}
 
+@media only screen and (min-width: 770px) {
+		.webenglish #adheader {
+		text-align: center;
+	}
+	.webenglish #adheader {
+    display: block;
+}
+	.webenglish .headerads {
+		display: block;
+		margin: 0 auto;
+	}
 }
 
 /* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
@@ -857,6 +895,21 @@ ul.mobile-nav li.nav-item {
         overflow: visible;
 		height: auto;
     }
+	
+	.headerenotes {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	
+	.webenglish #adheader {
+		text-align: right;
+	}
+	
+	.webenglish .headerads {
+		display: inline-block;
+		margin: 0 auto;
+	}
 	
 	body:before,
 	body:after {
@@ -932,6 +985,7 @@ ul.mobile-nav li.nav-item {
     }
 
     .webenglish #leftcontenttop {
+		background: #85b141;
         width: 724px;
     }
 
@@ -1074,7 +1128,10 @@ ul.mobile-nav li.nav-item {
     div.nav-contact a {
         width: 141px;
     }
-
+.mobile-only-ad {
+		display: none;
+	}
+	
 }
 
 
