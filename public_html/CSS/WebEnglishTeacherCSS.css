@@ -869,13 +869,14 @@ ul.mobile-nav li.nav-item {
 	}
 }
 
-@media only screen and (min-width: 770px) {
-		.webenglish #adheader {
+@media only screen and (min-width: 750px) {
+	.webenglish #adheader {
 		text-align: center;
 	}
+	
 	.webenglish #adheader {
-    display: block;
-}
+    	display: block;
+	}
 	.webenglish .headerads {
 		display: block;
 		margin: 0 auto;
