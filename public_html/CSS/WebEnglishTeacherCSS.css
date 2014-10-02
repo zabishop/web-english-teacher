@@ -757,6 +757,8 @@ ul.mobile-nav li.nav-item {
         color: #0f93ca;
     }
 
+
+/* Nav Links*/
     div.nav-home {
         width: 129px;
         height: 33px;
@@ -785,28 +787,24 @@ ul.mobile-nav li.nav-item {
         display: block;
         width: 129px;
         height: 33px;
-        background-image: url(../cgimages/nav-home.gif);
     }
 
     div.nav-blog a {
         display: block;
         width: 183px;
         height: 33px;
-        background-image: url('../cgimages/nav-blog.gif');
     }
 
     div.nav-sitemap a {
         display: block;
         width: 156px;
         height: 33px;
-        background-image: url('../cgimages/nav-sitemap.gif');
     }
 
     div.nav-contact a {
         display: block;
         width: 141px;
         height: 33px;
-        background-image: url('../cgimages/nav-contact.gif');
     }
 
     div.nav-home a:link,
@@ -825,9 +823,10 @@ ul.mobile-nav li.nav-item {
         text-decoration: none;
     }
 
+
+/* Nav Links Hover State*/
     div.nav-home a:hover,
     div.nav-home a:active {
-        background-image: url('../cgimages/nav-home-on.gif');
         font-family: Arial, sans-serif;
         font-size: 13px;
         color: #cccccc;
@@ -835,7 +834,6 @@ ul.mobile-nav li.nav-item {
 
     div.nav-blog a:hover,
     div.nav-blog a:active {
-        background-image: url('../cgimages/nav-blog-on.gif');
         font-family: Arial, sans-serif;
         font-size: 13px;
         color: #cccccc;
@@ -843,7 +841,6 @@ ul.mobile-nav li.nav-item {
 
     div.nav-sitemap a:hover,
     div.rss a:active {
-        background-image: url('../cgimages/nav-sitemap-on.gif');
         font-family: Arial, sans-serif;
         font-size: 13px;
         color: #cccccc;
@@ -851,7 +848,6 @@ ul.mobile-nav li.nav-item {
 
     div.nav-contact a:hover,
     div.nav-contact a:active {
-        background-image: url('../cgimages/nav-contact-on.gif');
         font-family: Arial, sans-serif;
         font-size: 13px;
         color: #cccccc;
@@ -1087,7 +1083,35 @@ ul.mobile-nav li.nav-item {
         right: 0;
         width: 609px;
         height: 33px;
+		background: #32bbe1 ;
+		border-radius: 10px 10px 0 0;
+		overflow: hidden;
+		margin-right: 10px;
     }
+	
+	
+	div.nav-link:hover {
+		background: #06a7e0;
+	}
+	
+	div.nav-link {
+		border-right: 1px solid white;
+		
+		width: 24.8% !important;
+		height: 23px !important;
+		padding-top: 10px !important;
+		float: left;
+		border-radius: 0 10px 0 0;
+	}
+	
+	div.nav-link:last-child {
+		border-right: none;
+	}
+	
+	div.nav-link a {
+		color: white !important;
+		width: 100% !important;
+	}
 
     div.horizontal div {
         float: left;
