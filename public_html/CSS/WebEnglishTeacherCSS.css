@@ -118,6 +118,7 @@ select.mobile-selector {
     width: 100%;
     padding: 0;
     margin: 0;
+	overflow: hidden;
 }
 
 .webenglish #leftcontenttop {
@@ -125,13 +126,24 @@ select.mobile-selector {
     padding: 0;
     margin: 0;
     display: block;
+	
+		/* can be treated like a fallback */
+	background-color: #B3D15B;
+	/* will be "on top", if browser supports it */
+	background-image: linear-gradient(#B3D15B, #86b242);
+	/* these will reset other properties, like background-position, but it does know what you mean */
+	background: #B3D15B;
+	background: linear-gradient(#B3D15B, #86b242);
+	
+	  -moz-box-shadow:    0px 0px 10px 0px #aaa;
+  -webkit-box-shadow: 0px 0px 10px 0px #aaa;
+  box-shadow:         0px 0px 10px 0px #aaa;
 }
 
 .webenglish #leftcontentbottom {
     width: 100%;
     padding: 0;
     display: block;
-	     background: url(../cgimages/main-background.gif) repeat-x;
 }
 
 .webenglish #rightcontent {
@@ -155,10 +167,10 @@ select.mobile-selector {
 
 div.sidenewsletter {
     height: auto;
-    background: #85b141 url(../cgimages/sidebar1_green.gif) repeat-x;
     padding: 0;
     width: 100%;
     text-align: center;
+
 }
 
 div.sidenewslettertext {
@@ -476,6 +488,35 @@ ul.mobile-nav li.nav-item {
 	float: right;*/
 }
 
+.button {
+
+	background-color: #32bbe1;
+	margin-bottom: 10px;
+	border-radius: 20px;
+	width: 100%;
+	border-bottom: #06a7e0 4px solid;
+	color: white;
+}
+
+.button:hover a {
+	color: white;
+}
+
+.button:active {
+	background: #06a7e0;
+	border-bottom: none;
+	position: relative;
+	top: 4px;
+}
+
+.button a {
+	display: block;
+	width: 100px;
+	padding: 10px;
+	margin: 0 auto;
+	color: white;
+}
+
 .utility-belt {
 	width: 100%;
 	text-align: center;
@@ -483,7 +524,6 @@ ul.mobile-nav li.nav-item {
 
 .mobile-only-ad {
 	display: block;
-	background: #85b141;
 }
 
 .mobile-only-ad img {
@@ -521,7 +561,14 @@ ul.mobile-nav li.nav-item {
         width: 100%;
         height: 110px;
         padding: 0;
-        background: #9bc14e url(../cgimages/adheader_green.gif) repeat-x;
+    	/* can be treated like a fallback */
+		background-color: #B3D15B;
+		/* will be "on top", if browser supports it */
+		background-image: linear-gradient(#B3D15B, #86b242);
+		/* these will reset other properties, like background-position, but it does know what you mean */
+		background: #B3D15B;
+		background: linear-gradient(#B3D15B, #86b242);
+	
     }
 
     ul.mobile-nav {
@@ -577,6 +624,8 @@ ul.mobile-nav li.nav-item {
     .webenglish #leftcontenttop {
         width: 100%;
         float: left;
+		border-top: 3px solid #eee;
+		border-bottom: 3px solid #eee;
     }
 
     .webenglish #leftcontentbottom {
@@ -587,6 +636,7 @@ ul.mobile-nav li.nav-item {
     .webenglish #rightcontent {
         width: 30%;
         height: auto;
+		border-top: 3px solid #eee;
     }
 
     .webenglish > #rightcontent > img{
@@ -626,7 +676,13 @@ ul.mobile-nav li.nav-item {
         float: left;
         width: 75%;
         height: 125px;
-        background: url(../cgimages/article-background2.jpg) no-repeat;
+		/* can be treated like a fallback */
+		background-color: #d2cc5e;
+		/* will be "on top", if browser supports it */
+		background-image: linear-gradient(#d2cc5e, #f3eaa9);
+		/* these will reset other properties, like background-position, but it does know what you mean */
+		background: #d2cc5e;
+		background: linear-gradient(#d2cc5e, #f3eaa9);
         display: none;
     }
 
@@ -855,7 +911,6 @@ ul.mobile-nav li.nav-item {
 	.mobile-only-ad {
 		display: block;
 		width: 100%;
-		background: #85B141;
 	}
 	
 	.mobile-only-ad img {
@@ -932,10 +987,18 @@ ul.mobile-nav li.nav-item {
     .webenglish #adheader {
 
 		display: block;
-		        width: 100%;
+		width: 100%;
         height: 110px;
         padding: 0;
-        background: #9bc14e url(../cgimages/adheader_green.gif) repeat-x;
+        		/* can be treated like a fallback */
+		background-color: #B3D15B;
+		/* will be "on top", if browser supports it */
+		background-image: linear-gradient(#B3D15B, #86b242);
+		/* these will reset other properties, like background-position, but it does know what you mean */
+		background: #B3D15B;
+		background: linear-gradient(#B3D15B, #86b242);
+		
+	
     }
 
 	.wetlogo{
@@ -982,7 +1045,8 @@ ul.mobile-nav li.nav-item {
     }
 
     .webenglish #leftcontenttop {
-		background: #85b141;
+		/*background: #85b141;*/
+	
         width: 724px;
     }
 
