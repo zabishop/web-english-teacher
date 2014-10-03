@@ -95,6 +95,7 @@
     <!-- End Google Search -->
 
     <!-- Mobile Nav Bar -->
+ <!--
     <ul class="mobile-nav">
         <li class="nav-item">
             <a href="../index.html">Home</a>
@@ -112,7 +113,7 @@
             <a href="../contact.html">Contact Us</a>
         </li>
     </ul>
-
+-->
 <!-- test -->
     <div class="horizontal">
         <div class="nav-link nav-home">

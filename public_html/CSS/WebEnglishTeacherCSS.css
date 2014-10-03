@@ -450,9 +450,6 @@ table {
     width: 100%;
 }
 
-div.horizontal {
-    display: none;
-}
 
 ul.mobile-nav {
     list-style: none;
@@ -480,6 +477,47 @@ ul.mobile-nav li.nav-item {
     color: white;
 }
 
+div.horizontal {
+	display: block;
+	position: static;
+
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	height: 33px;
+	background: #32bbe1 ;
+	overflow: hidden;
+}
+
+div.nav-link:hover {
+	background: #06a7e0;
+}
+
+div.nav-link {
+	width: 23% !important;
+	border-right: 1px solid white;
+	height: 23px !important;
+	padding-top: 10px !important;
+	display: inline-block;
+}
+
+div.nav-home a,
+div.nav-blog a,
+div.nav-sitemap a,
+div.nav-contact a {
+	width: 100% !important;
+}
+
+div.nav-link:last-child {
+	border-right: none;
+}
+
+div.nav-link a {
+	color: white !important;
+	width: 100%;
+}
+	
+
 #cse {
 	/*margin-top: 1em;
 	width: 40%;
@@ -495,11 +533,13 @@ ul.mobile-nav li.nav-item {
 	border-radius: 20px;
 	width: 100%;
 	border-bottom: #06a7e0 4px solid;
+	
 	color: white;
 }
 
 .button:hover a {
 	color: white;
+	text-decoration: none;
 }
 
 .button:active {
