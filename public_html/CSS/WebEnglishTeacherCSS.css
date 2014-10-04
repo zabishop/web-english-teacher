@@ -481,7 +481,7 @@ div.horizontal {
 	display: block;
 	position: static;
 
-	margin: 0 auto;
+	margin: 0 auto 25px auto;
 	text-align: center;
 	width: 100%;
 	height: 33px;
@@ -580,6 +580,11 @@ div.nav-link a {
     body {
         width: 100%;
     }
+	
+	
+	div.horizontal {
+		margin-bottom: 0;
+	}
 	
 
 	#vvohclightboxapi{
@@ -1191,6 +1196,7 @@ div.nav-link a {
 		border-radius: 10px 10px 0 0;
 		overflow: hidden;
 		margin-right: 10px;
+		margin-bottom: 0;
     }
 	
 	
