@@ -983,7 +983,8 @@ div.nav-link a {
 
 @media only screen and (min-width: 970px) {
 	html {
-		background: lightgrey;
+		background: url(../cgimages/site-bg.jpg) no-repeat center;
+		background-size: cover;
 	}
     body {
         width: 1024px;
