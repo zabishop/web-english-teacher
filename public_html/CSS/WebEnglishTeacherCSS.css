@@ -527,15 +527,13 @@ div.nav-link a {
 }
 
 .button {
-
-	background-color: #32bbe1;
+	background-color: #B3D15B;
 	margin-bottom: 10px;
 	border-radius: 20px;
 	width: 100%;
-	border-bottom: #06a7e0 4px solid;
-	
+	border-bottom: #336600 4px solid;
 	color: white;
-}
+}	
 
 .button:hover a {
 	color: white;
@@ -983,7 +981,17 @@ div.nav-link a {
 
 @media only screen and (min-width: 970px) {
 	html {
-		background: url(../cgimages/site-bg.jpg) no-repeat center;
+		/*background: url(../cgimages/site-bg3.jpg) no-repeat center;*/
+		
+		    	/* can be treated like a fallback */
+		background-color: #32BBE1;
+		/* will be "on top", if browser supports it */
+		background-image: linear-gradient(#32BBE1, #1E89B4);
+		/* these will reset other properties, like background-position, but it does know what you mean */
+		background: #32BBE1;
+		background: linear-gradient(#32BBE1, #1E89B4);
+		
+		background-attachment: fixed;
 		background-size: cover;
 	}
     body {
