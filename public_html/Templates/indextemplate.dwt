@@ -18,9 +18,8 @@
     <title>Web English Teacher</title>
     <!-- TemplateEndEditable -->
 
-    <link rel="image_src" href="cgimages/soc-net-share-image.png"/>
+    <link rel="image_src" href="cgimages/wet-share1.png"/>
     <link href="../CSS/WebEnglishTeacherCSS.css" rel="stylesheet" type="text/css"/>
-    <link rel="SHORTCUT ICON" HREF="../cgimages/favicon.ico">
 
     <!--[if IE 7]>
     <link href="../CSS/ie7.css" media="screen, projection" rel="stylesheet" type="text/css"/>
@@ -31,7 +30,7 @@
     <![endif]-->
 
     <!-- links to icon and Facebook Thumbnail -->
-    <link rel="icon" type="image/png" href="cgimages/favicon.ico">
+    <link rel="icon" type="image/png" href="cgimages/wet-fav.png">
     <!-- end links -->
     
    
@@ -43,28 +42,25 @@
     <div class="headerads">
         <!-- Begin Hotchalk/Adzerk tag for Web English Teacher ID#819707 -->
         <div id="azk97348">
-<!-- Conversant Media 728x90 LEADERBOARD CODE for Web English Teacher -->
-<!--
-<script type="text/javascript">var vclk_options = 
-{sid:50922,media_type:5,version:"1.4"};</script><script class="vclk_pub_code" type="text/javascript" src="http://cdn.fastclick.net/js/adcodes/pubcode.min.js?sid=50922&media_type=5&version=1.4&exc=1"></script><noscript><a href="http://media.fastclick.net/w/click.here?sid=50922&m=1&c=1" target="_blank"><img src="http://media.fastclick.net/w/get.media?sid=50922&tp=5&d=s&c=1&vcm_acv=1.4" width="728" height="90" border="1"></a></noscript>
--->
-<!-- Conversant Media 728x90 LEADERBOARD CODE for Web English Teacher -->
-  			<img src="temp-img/temp-ad.png"/>
-			
+            <!-- Conversant Media 728x90 LEADERBOARD CODE for Web English Teacher -->
+            
+            <script type="text/javascript">var vclk_options = 
+            {sid:50922,media_type:5,version:"1.4"};</script><script class="vclk_pub_code" type="text/javascript" src="http://cdn.fastclick.net/js/adcodes/pubcode.min.js?sid=50922&media_type=5&version=1.4&exc=1"></script><noscript><a href="http://media.fastclick.net/w/click.here?sid=50922&m=1&c=1" target="_blank"><img src="http://media.fastclick.net/w/get.media?sid=50922&tp=5&d=s&c=1&vcm_acv=1.4" width="728" height="90" border="1"></a></noscript>
+            
+            <!-- Conversant Media 728x90 LEADERBOARD CODE for Web English Teacher -->
+  
         </div>
         <!-- End Hotchalk/Adzerk tag for Web English Teacher ID#819707 -->
-        
-      
     </div>
     <div class="headerenotes">
         <a href="http://www.enotes.com/" target="_blank">
-            <img src="../cgimages/enotes3.gif" alt="eNotes"/>
+            <img src="../cgimages/enotes3.png" alt="eNotes"/>
         </a>
     </div>
 </div>
 <div id="header">
     <a href="../index.html">
-        <img class="wetlogo" src="../cgimages/WET_logo.gif"/>
+        <img class="wetlogo" src="../cgimages/wet-logo-small.png"/>
     </a>
     <div class="twitter-fb-link-wrapper">
         <p>Follow us on:</p>
@@ -94,27 +90,6 @@
     
     <!-- End Google Search -->
 
-    <!-- Mobile Nav Bar -->
- <!--
-    <ul class="mobile-nav">
-        <li class="nav-item">
-            <a href="../index.html">Home</a>
-        </li>
-        <li>|</li>
-        <li class="nav-item">
-            <a href="http://webenglishteacher.com/chalkdust/">Chalkdust</a>
-        </li>
-        <li>|</li>
-        <li class="nav-item">
-            <a href="http://www.webenglishteacher.com/generator/data/sitemap.html">Sitemap</a>
-        </li>
-        <li>|</li>
-        <li class="nav-item">
-            <a href="../contact.html">Contact Us</a>
-        </li>
-    </ul>
--->
-<!-- test -->
     <div class="horizontal">
         <div class="nav-link nav-home">
             <a href="../index.html">

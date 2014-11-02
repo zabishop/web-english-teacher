@@ -128,12 +128,12 @@ select.mobile-selector {
     display: block;
 	
 		/* can be treated like a fallback */
-	background-color: #B3D15B;
+	background-color: #32bbe1;
 	/* will be "on top", if browser supports it */
-	background-image: linear-gradient(#B3D15B, #86b242);
+	background-image: linear-gradient(#32bbe1, #1068b8);
 	/* these will reset other properties, like background-position, but it does know what you mean */
-	background: #B3D15B;
-	background: linear-gradient(#B3D15B, #86b242);
+	background: #1068b8;
+	background: linear-gradient(#32bbe1, #1068b8);
 	
 	  -moz-box-shadow:    0px 0px 10px 0px #aaa;
   -webkit-box-shadow: 0px 0px 10px 0px #aaa;
@@ -981,20 +981,12 @@ div.nav-link a {
 
 @media only screen and (min-width: 970px) {
 	html {
-		background: url(../cgimages/site-bg6.jpg) no-repeat center;
-		
-		    	/* can be treated like a fallback */
-/*		background-color: #32BBE1;
-		background-image: linear-gradient(#32BBE1, #1E89B4);
-		background: #32BBE1;
-		background: linear-gradient(#32BBE1, #1E89B4);*/
-		
+		background: url(../cgimages/site-bg4.jpg) no-repeat center;	
 		background-attachment: fixed;
 		background-size: cover;
 	}
     body {
         width: 1024px;
-        /*background: #fff url(../cgimages/wet-background.gif) repeat-y fixed center;*/
 		background: #fff;
         overflow: visible;
 		height: auto;
