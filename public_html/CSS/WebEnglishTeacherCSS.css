@@ -49,6 +49,17 @@ body {
 .webenglish #adheader .headerenotes {
     float: left;
 }
+.headerenotes img {
+	border-radius: 10px;
+	border: 4px solid #126DBA;
+	box-shadow: 0px 0px 1px 1px white;
+}
+
+.mobile-only-ad img {
+	border-radius: 10px;
+	border: 4px solid #126DBA;
+	box-shadow: 0px 0px 1px 1px white;
+}
 
 .webenglish #adheader .headerenotes a img {
     width: 98%;
@@ -104,7 +115,7 @@ select.mobile-selector {
     width: 90%;
     height: 2em;
     font-size: 1.5em;
-	margin-bottom: .5em;
+	margin-bottom: 25px;
 }
 
 .webenglish #pagecontent {
@@ -133,8 +144,7 @@ select.mobile-selector {
 	background-image: linear-gradient(#32bbe1, #1068b8);
 	
 	/* these will reset other properties, like background-position, but it does know what you mean */
-	background: #B3D15B;
-	background: linear-gradient(#B3D15B, #86b242);
+	background: linear-gradient(#32bbe1, #1068b8);
 
 	
 	-moz-box-shadow:    0px 0px 10px 0px #aaa;
@@ -152,7 +162,7 @@ select.mobile-selector {
     float: right;
     width: 100%;
     height: auto;
-    background: url(../cgimages/sidebar2_green.gif) repeat-y #86b242;
+    background: #32bbe1;
     padding: 0;
     display: block;
     margin: 0 auto 1em auto;
@@ -190,8 +200,7 @@ div.sidenewslettertext {
 
 div.sidenewsletter-in {
     height: auto;
-    background: url(../cgimages/sidebar1_green.gif) repeat-x;
-    padding: 0;
+    padding: 0 0 25px 0;
     display: block;
 }
 
@@ -224,18 +233,51 @@ div.mainContent3, div.mainContent {
 
 }
 
+
+div.mainContentText {
+	font-size: 1.1em;
+	line-height: 1.5em;
+}
+	
+.newsletter-link {
+	width: 100%;
+	display: block;
+	padding: 5px;
+	text-align: center;
+}
+
+.newsletter-link span {
+	color: white;
+	font-size: 11px;
+}
+
+.at-sign {
+	margin: 5px;
+	height: 25px;
+	width: 25px;
+	line-height: 25px;
+	text-align: center;
+	display: inline-block;
+	background-color: #1068b8;
+	background-image: linear-gradient(#1068b8, #32bbe1);
+	background: linear-gradient(#1068b8, #32bbe1);
+	color: white;
+	font-size: 15px;
+	vertical-align: middle;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+
 div.mainContentText {
     display: block;
     margin: 0 auto;
     width: 90%;
     font-family: Verdana, Geneva, sans-serif;
-    font-size: 13px;
     color: #000;
 }
 
 div.mainContentText a, div.mainContentText a:visited {
     font-family: Verdana, Geneva, sans-serif;
-    font-size: 13px;
     color: #0f93ca;
 }
 
@@ -313,7 +355,14 @@ div.literacysite {
     text-align: center;
     display: block;
     width: 100%;
-    background: url(../cgimages/sidebar2_green.gif) repeat-y #86b242;
+    background: #86b242;
+		/* can be treated like a fallback */
+	background-color: #32bbe1;
+	/* will be "on top", if browser supports it */
+	background-image: linear-gradient(#32bbe1, #1068b8);
+	
+	/* these will reset other properties, like background-position, but it does know what you mean */
+	background: linear-gradient(#32bbe1, #1068b8);
 }
 
 div.literacysite a {
@@ -354,36 +403,33 @@ div.footer a, div.footer a:visited, div.footer a:hover {
 h1, h3, h4 {
     font-size: 25px;
     font-family: Arial, sans-serif;
-    color: #7ca53c;
+    color: #1068b8;
     font-weight: normal;
     border-bottom: 1px solid;
     line-height: 28px;
 }
 
+
 a {
     font-family: Verdana, Geneva, sans-serif;
-    font-size: 11px;
     color: #0f93ca;
     text-decoration: none;
 }
 
 a:link {
     font-family: Verdana, Geneva, sans-serif;
-    font-size: 11px;
-    color: #0f93ca;
+	color: #0f93ca;
     text-decoration: none;
 }
 
 a:visited {
     font-family: Verdana, Geneva, sans-serif;
-    font-size: 11px;
     color: #0f93ca;
     text-decoration: none;
 }
 
 a:hover {
     font-family: Verdana, Geneva, sans-serif;
-    font-size: 11px;
     color: #0f93ca;
     text-decoration: underline;
 }
@@ -529,11 +575,11 @@ div.nav-link a {
 }
 
 .button {
-	background-color: #B3D15B;
+	background-color: #32bbe1;
 	margin-bottom: 10px;
 	border-radius: 20px;
 	width: 100%;
-	border-bottom: #336600 4px solid;
+	border-bottom: #3B579D 4px solid;
 	color: white;
 }	
 
@@ -568,10 +614,26 @@ div.nav-link a {
 
 .mobile-only-ad img {
 	width: 95% !important;
-	padding: 2.5% 0;
+	padding:  0;
 	display: block;
-	margin: 0 auto !important;
+	margin: 2.5% auto !important;
 	height: auto !important;
+}
+
+.mobile-only-link {
+	display: block;
+}
+
+.tablet-plus-only {
+	display: none;
+}
+
+div.footer{
+	line-height:12px;
+}
+
+div.footer-links p {
+	text-align: center;
 }
 
 /* Tablet Layout */
@@ -606,14 +668,14 @@ div.nav-link a {
         width: 100%;
         height: 110px;
         padding: 0;
-    	/* can be treated like a fallback */
-		background-color: #B3D15B;
+		/* can be treated like a fallback */
+		background-color: #32bbe1;
 		/* will be "on top", if browser supports it */
-		background-image: linear-gradient(#B3D15B, #86b242);
+		background-image: linear-gradient(#32bbe1, #1068b8);
+		
 		/* these will reset other properties, like background-position, but it does know what you mean */
-		background: #B3D15B;
-		background: linear-gradient(#B3D15B, #86b242);
-	
+		background: linear-gradient(#32bbe1, #1068b8);
+		
     }
 
     ul.mobile-nav {
@@ -722,12 +784,12 @@ div.nav-link a {
         width: 75%;
         height: 125px;
 		/* can be treated like a fallback */
-		background-color: #d2cc5e;
+		background-color: #f3eaa9;
 		/* will be "on top", if browser supports it */
-		background-image: linear-gradient(#d2cc5e, #f3eaa9);
+		background-image: linear-gradient(#f3eaa9, #E6B84B);
 		/* these will reset other properties, like background-position, but it does know what you mean */
-		background: #d2cc5e;
-		background: linear-gradient(#d2cc5e, #f3eaa9);
+		background: #f3eaa9;
+		background: linear-gradient(#f3eaa9, #E6B84B);
         display: none;
     }
 
@@ -787,7 +849,7 @@ div.nav-link a {
 
     div.sidenavtext a, div.sidenavtext a:visited {
         font-family: Verdana, Geneva, sans-serif;
-        font-size: 11px;
+        font-size: 14px;
         color: #0f93ca;
         text-decoration: none;
     }
@@ -963,6 +1025,18 @@ div.nav-link a {
 		display: block;
 		margin: 0 auto;
 	}
+	
+	.mobile-only-link {
+		display: none;
+	}
+	
+	.tablet-plus-only {
+		display: block;
+	}
+
+
+
+
 }
 
 @media only screen and (min-width: 750px) {
@@ -983,14 +1057,7 @@ div.nav-link a {
 
 @media only screen and (min-width: 970px) {
 	html {
-		background: url(../cgimages/site-bg4.jpg) no-repeat center;
-		
-		    	/* can be treated like a fallback */
-/*		background-color: #32BBE1;
-		background-image: linear-gradient(#32BBE1, #1E89B4);
-		background: #32BBE1;
-		background: linear-gradient(#32BBE1, #1E89B4);*/
-		
+		background: url(../cgimages/site-bg.jpg) no-repeat center;
 		background-attachment: fixed;
 		background-size: cover;
 	}
@@ -1044,20 +1111,19 @@ div.nav-link a {
 		width: 100%;
         height: 110px;
         padding: 0;
-        		/* can be treated like a fallback */
-		background-color: #B3D15B;
+		/* can be treated like a fallback */
+		background-color: #32bbe1;
 		/* will be "on top", if browser supports it */
-		background-image: linear-gradient(#B3D15B, #86b242);
-		/* these will reset other properties, like background-position, but it does know what you mean */
-		background: #B3D15B;
-		background: linear-gradient(#B3D15B, #86b242);
+		background-image: linear-gradient(#32bbe1, #1068b8);
 		
-	
+		/* these will reset other properties, like background-position, but it does know what you mean */
+		background: linear-gradient(#32bbe1, #1068b8);
     }
 
 	.wetlogo{
 		width: auto;
 	}
+	
     div.headerads {
         width: 728px;
     }
@@ -1158,8 +1224,12 @@ div.nav-link a {
     }
 
     div.mainContentText {
+		font-size: 1.1em;
+		line-height: 1.5em;
         width: 90%;
     }
+	
+	
 
     div.rightbannerad {
         width: 300px;
@@ -1272,10 +1342,28 @@ div.nav-link a {
     div.nav-contact a {
         width: 141px;
     }
-.mobile-only-ad {
+	.mobile-only-ad {
 		display: none;
 	}
 	
+	.newsletter-link span {
+		color: white;
+		font-size: 14px;
+	}
+	
+	.at-sign {
+		margin: 5px;
+		height: 35px;
+		width: 35px;
+		line-height: 35px;
+		display: inline-block;
+		font-size: 25px;
+	}
+	div.sidenewsletter-in {
+		height: auto;
+		padding: 0 ;
+		display: block;
+	}
 }
 
 

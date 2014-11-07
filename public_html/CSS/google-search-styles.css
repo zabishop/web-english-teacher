@@ -61,4 +61,9 @@ table.gsc-search-box {
 		position: relative;
 		vertical-align: top;
 	}
+	
+	#cse.home {
+		width: 21%;
+
+	}
 }
