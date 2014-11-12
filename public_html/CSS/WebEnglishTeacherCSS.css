@@ -283,7 +283,6 @@ div.mainContentText a, div.mainContentText a:visited {
 
 div.mainContentText a:hover {
     font-family: Verdana, Geneva, sans-serif;
-    font-size: 13px;
     color: #999;
     text-decoration: underline;
 }
@@ -436,12 +435,10 @@ a:hover {
 
 td {
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 11px;
 }
 
 th {
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 11px;
 }
 
 h2, h4, h5, h6 {
@@ -815,7 +812,6 @@ div.footer-links p {
 
     div.sidearticletext a:hover {
         font-family: Verdana, Geneva, sans-serif;
-        font-size: 13px;
         color: #EEE;
     }
 
@@ -840,7 +836,7 @@ div.footer-links p {
         font-family: Verdana, Geneva, sans-serif;
         font-size: 1em;
         color: #0f93ca;
-        line-height: 1.8em;
+        margin-bottom:10px;
     }
 
     div.sidenavtext ul li:first-of-type {
@@ -856,7 +852,6 @@ div.footer-links p {
 
     div.sidenavtext a:hover {
         font-family: Verdana, Geneva, sans-serif;
-        font-size: 11px;
         color: #999;
         text-decoration: underline;
     }
@@ -991,28 +986,24 @@ div.footer-links p {
     div.nav-home a:hover,
     div.nav-home a:active {
         font-family: Arial, sans-serif;
-        font-size: 13px;
         color: #cccccc;
     }
 
     div.nav-blog a:hover,
     div.nav-blog a:active {
         font-family: Arial, sans-serif;
-        font-size: 13px;
         color: #cccccc;
     }
 
     div.nav-sitemap a:hover,
     div.rss a:active {
         font-family: Arial, sans-serif;
-        font-size: 13px;
         color: #cccccc;
     }
 
     div.nav-contact a:hover,
     div.nav-contact a:active {
         font-family: Arial, sans-serif;
-        font-size: 13px;
         color: #cccccc;
     }
 	.mobile-only-ad {
@@ -1033,9 +1024,6 @@ div.footer-links p {
 	.tablet-plus-only {
 		display: block;
 	}
-
-
-
 
 }
 
@@ -1063,7 +1051,6 @@ div.footer-links p {
 	}
     body {
         width: 1024px;
-        /*background: #fff url(../cgimages/wet-background.gif) repeat-y fixed center;*/
 		background: #fff;
         overflow: visible;
 		height: auto;
@@ -1165,8 +1152,6 @@ div.footer-links p {
     }
 
     .webenglish #leftcontenttop {
-		/*background: #85b141;*/
-	
         width: 724px;
     }
 
@@ -1229,8 +1214,6 @@ div.footer-links p {
         width: 90%;
     }
 	
-	
-
     div.rightbannerad {
         width: 300px;
     }
